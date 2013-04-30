@@ -1,0 +1,43 @@
+// VisualPCDTransDlg.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "visualpcd.h"
+#include "VisualPCDTransDlg.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+// CVisualPCDTransDlg dialog
+
+
+CVisualPCDTransDlg::CVisualPCDTransDlg(CWnd* pParent /*=NULL*/)
+	: CDialog(CVisualPCDTransDlg::IDD, pParent)
+{
+	//{{AFX_DATA_INIT(CVisualPCDTransDlg)
+		// NOTE: the ClassWizard will add member initialization here
+	//}}AFX_DATA_INIT
+}
+
+
+void CVisualPCDTransDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+	//{{AFX_DATA_MAP(CVisualPCDTransDlg)
+		// NOTE: the ClassWizard will add DDX and DDV calls here
+	//}}AFX_DATA_MAP
+}
+
+
+BEGIN_MESSAGE_MAP(CVisualPCDTransDlg, CDialog)
+	//{{AFX_MSG_MAP(CVisualPCDTransDlg)
+		// NOTE: the ClassWizard will add message map macros here
+	//}}AFX_MSG_MAP
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// CVisualPCDTransDlg message handlers

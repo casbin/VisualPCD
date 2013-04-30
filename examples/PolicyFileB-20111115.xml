@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PolicySet PolicySetId="PolicySet0" PolicyCombiningAlgId="deny-overrides">
+	<Description>
+		PolicySet for PolicyFileB
+	</Description>
+	<Target/>
+	<Policy PolicyId="Policy0" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>marketing-study-agent</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>after-sale-server</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>@Inherit</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+</PolicySet>

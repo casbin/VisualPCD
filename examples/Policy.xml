@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Policy xmlns="urn:oasis:names:tc:xacml:1.0:policy"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        PolicyId="TimeRangePolicy"
+        RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:ordered-permit-overrides">
+
+  <Description>
+    Between 9am and 5pm local time, allow anyone to open the main
+    door. All other times, only allow authorized people (ie, those with
+    an email address @users.example.com). Deny in all other cases.
+  </Description>
+
+  <Target>
+    <Subjects>
+      <AnySubject/>
+    </Subjects>
+    <Resources>
+      <Resource>
+        <ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">main-door</AttributeValue>
+          <ResourceAttributeDesignator DataType="http://www.w3.org/2001/XMLSchema#string"
+                                       AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id"/>
+        </ResourceMatch>
+      </Resource>
+    </Resources>
+    <Actions>
+      <Action>
+        <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">open</AttributeValue>
+          <ActionAttributeDesignator DataType="http://www.w3.org/2001/XMLSchema#string"
+                                     AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id"/>
+        </ActionMatch>
+      </Action>
+    </Actions>
+  </Target>
+
+  <Rule RuleId="EveryoneDuringBusinessHours" Effect="Permit">
+    <Condition FunctionId="http://research.sun.com/projects/xacml/names/function#time-in-range">
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:time-one-and-only">
+        <EnvironmentAttributeDesignator DataType="http://www.w3.org/2001/XMLSchema#time"
+                                        AttributeId="urn:oasis:names:tc:xacml:1.0:environment:current-time"/>
+      </Apply>
+      <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">09:00:00</AttributeValue>
+      <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:00:00</AttributeValue>
+    </Condition>
+  </Rule>
+
+  <Rule RuleId="EmployeesAlways" Effect="Permit">
+    <Target>
+      <Subjects>
+        <Subject>
+          <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:rfc822Name-match">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">users.example.com</AttributeValue>
+            <SubjectAttributeDesignator DataType="urn:oasis:names:tc:xacml:1.0:data-type:rfc822Name"
+                                        AttributeId="urn:oasis:names:tc:xacml:1.0:subject:subject-id"/>
+          </SubjectMatch>
+        </Subject>
+      </Subjects>
+      <Resources>
+        <AnyResource/>
+      </Resources>
+      <Actions>
+        <AnyAction/>
+      </Actions>
+    </Target>
+  </Rule>
+
+  <Rule RuleId="DenyAllOthers" Effect="Deny"/>
+
+</Policy>

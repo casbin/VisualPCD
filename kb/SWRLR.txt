@@ -1,0 +1,36 @@
+(firerule (?sA Subject) ((related ?sA ?sA has_Subject_Overlap)))
+(firerule (?rA Resource) ((related ?rA ?rA has_Resource_Overlap)))
+(firerule (?aA Action) ((related ?aA ?aA has_Action_Overlap)))
+
+(firerule (?sA ?sB has_subSubject) ((related ?sA ?sB has_Subject_Overlap)))
+(firerule (?sA ?sB has_Subject_Overlap) ((related ?sB ?sA has_Subject_Overlap)))
+
+(firerule (?rA ?rB has_subResource) ((related ?rA ?rB has_Resource_Overlap)))
+(firerule (?rA ?rB has_Resource_Overlap) ((related ?rB ?rA has_Resource_Overlap)))
+
+(firerule (?aA ?aB has_Action_Overlap) ((related ?aB ?aA has_Action_Overlap)))
+
+(firerule (and (?pA ?sA has_Subject) (?pB ?sB has_Subject) (?sA ?sB has_Subject_Overlap)
+(?pA ?rA has_Resource) (?pB ?rB has_Resource) (?rA ?rB has_Resource_Overlap)
+(?pA ?aA has_Action) (?pB ?aB has_Action) (?aA ?aB has_Action_Overlap))
+((related ?pA ?pB has_Permission_Overlap)))
+
+(firerule (and (?poA ?pA has_PermitA) (?poB ?pB has_DenyB) (?pA ?pB has_Permission_Overlap))
+((related ?poA ?poB has_Policy_Conflict)))
+(firerule (and (?poA ?pA has_PermitA) (?poB ?pB has_DenyB) (?pA ?pB has_Permission_Overlap))
+((related ?poB ?poA has_Policy_Conflict)))
+
+(firerule (and (?poA ?pA has_PermitA) (?poB ?pB has_DenyA) (?pA ?pB has_Permission_Overlap))
+((related ?poA ?poB has_Policy_Conflict)))
+(firerule (and (?poA ?pA has_PermitA) (?poB ?pB has_DenyA) (?pA ?pB has_Permission_Overlap))
+((related ?poB ?poA has_Policy_Conflict)))
+
+(firerule (and (?poA ?pA has_PermitB) (?poB ?pB has_DenyA) (?pA ?pB has_Permission_Overlap))
+((related ?poA ?poB has_Policy_Conflict)))
+(firerule (and (?poA ?pA has_PermitB) (?poB ?pB has_DenyA) (?pA ?pB has_Permission_Overlap))
+((related ?poB ?poA has_Policy_Conflict)))
+
+(firerule (and (?poA ?pA has_PermitB) (?poB ?pB has_DenyB) (?pA ?pB has_Permission_Overlap))
+((related ?poA ?poB has_Policy_Conflict)))
+(firerule (and (?poA ?pA has_PermitB) (?poB ?pB has_DenyB) (?pA ?pB has_Permission_Overlap))
+((related ?poB ?poA has_Policy_Conflict)))

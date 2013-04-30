@@ -1,0 +1,10 @@
+JRacer provides an API to a RacerServer for application programs 
+written in Java.
+
+The interface is provided with source code in the folder jracer.
+
+Just do a cd to <local-pathname>/JRacer-1-9 and excute
+
+java Test
+
+

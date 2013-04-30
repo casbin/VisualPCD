@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PolicySet PolicySetId="PolicySet0" PolicyCombiningAlgId="deny-overrides">
+	<Description>
+		PolicySet for PolicyFileD
+	</Description>
+	<Target/>
+	<Policy PolicyId="Policy0" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Deny">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>after-sale-server</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>contact-information</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>Delete</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+</PolicySet>

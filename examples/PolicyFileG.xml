@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<PolicySet PolicySetId="PolicySet0" PolicyCombiningAlgId="deny-overrides">
+	<Description>
+		PolicySet for PolicyFileA
+	</Description>
+	<Target/>
+	<Policy PolicyId="Policy1" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject1</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource1</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy2" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject2</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource3</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy3" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject3</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource6</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy4" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject4</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource7</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy5" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject5</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource5</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy5-1" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Deny">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject6</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource1</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy5-2" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject4</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource6</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy5-3" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Deny">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject4</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource3</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy5-4" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>subject7</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource3</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>write</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy7" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>subject1</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>subject2</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy8" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>subject2</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>subject3</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy9" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>subject3</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>subject4</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy9-1" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>subject5</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>subject1</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy9-2" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>subject2</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>subject6</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy9-3" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>subject7</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>subject3</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy10" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="resource-contain">
+							<AttributeValue>resource5</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource4</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy11" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="resource-contain">
+							<AttributeValue>resource4</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource3</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy12" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="resource-contain">
+							<AttributeValue>resource3</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource2</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy13" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="resource-contain">
+							<AttributeValue>resource2</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource1</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy13-1" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="resource-contain">
+							<AttributeValue>resource7</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource5</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	<Policy PolicyId="Policy13-2" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="resource-contain">
+							<AttributeValue>resource6</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>resource4</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+</PolicySet>

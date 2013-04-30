@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PolicySet PolicySetId="PolicySet0" PolicyCombiningAlgId="deny-overrides">
+	<Description>
+		PolicySet for PolicyFile3
+	</Description>
+	<Target/>
+	<Policy PolicyId="P1" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Deny">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch>
+							<AttributeValue>Rc</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>fileserver</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>read</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	
+	<Policy PolicyId="Pa" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>R1</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>Rc</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	
+	<Policy PolicyId="Pb" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>Ra</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>R3</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+	
+	<Policy PolicyId="P5" RuleCombiningAlgId="deny-overrides">
+		<Target/>
+		<Rule RuleId="Rule0" Effect="Permit">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="subject-contain">
+							<AttributeValue>R3</AttributeValue>
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Resources>
+					<Resource>
+						<ResourceMatch>
+							<AttributeValue>R1</AttributeValue>
+						</ResourceMatch>
+					</Resource>
+				</Resources>
+				<Actions>
+					<Action>
+						<ActionMatch>
+							<AttributeValue>enableRole</AttributeValue>
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+		</Rule>
+	</Policy>
+</PolicySet>
