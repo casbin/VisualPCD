@@ -113,9 +113,12 @@ void CVisualPCDAboutDlg::InitPointer()
 void CVisualPCDAboutDlg::InitWindow()
 {
 	
-	this->SetWindowText("VisualPCD - ²ßÂÔ³åÍ»¼ì²â¹¤¾ß");
+// 	this->SetWindowText("VisualPCD - ²ßÂÔ³åÍ»¼ì²â¹¤¾ß");
+// 	pStrAboutTitle = GetSonicUI()->CreateString();
+// 	pStrAboutTitle->Format("VisualPCD - ²ßÂÔ³åÍ»¼ì²â¹¤¾ß");
+	this->SetWindowText("VisualPCD - VISUAL Policy Conflict Detector");
 	pStrAboutTitle = GetSonicUI()->CreateString();
-	pStrAboutTitle->Format("VisualPCD - ²ßÂÔ³åÍ»¼ì²â¹¤¾ß");
+	pStrAboutTitle->Format("VisualPCD - VISUAL Policy Conflict Detector");
 
 	SetWindowLong(m_hWnd, GWL_EXSTYLE, 0x00080000);//WS_EX_LAYERED);
 	
@@ -131,7 +134,7 @@ void CVisualPCDAboutDlg::InitWindow()
 	pStrAboutInfo->Format("VisualPCD v1.1 by Veotax");
 
 	pStrAboutClose = GetSonicUI()->CreateString();
-	pStrAboutClose->Format("¹Ø±Õ");
+	pStrAboutClose->Format("Close");
 
 
 	pAboutEffect = GetSonicUI()->CreateWndEffect();

@@ -101,14 +101,22 @@ void CVisualPCDGraphDlg::InitPointer()
 void CVisualPCDGraphDlg::InitWindow()
 {
 	
-	this->SetWindowText("策略冲突图示");
+// 	this->SetWindowText("策略冲突图示");
+// 	pStrGraphTitle = GetSonicUI()->CreateString();
+// 	pStrGraphTitle->Format("策略冲突图示");
+// 
+// 	pStrStatic1 = GetSonicUI()->CreateString();
+// 	pStrStatic1->Format("策略文件1内容：");
+// 	pStrStatic2 = GetSonicUI()->CreateString();
+// 	pStrStatic2->Format("策略文件2内容：");
+	this->SetWindowText("Policy Conflict Graph");
 	pStrGraphTitle = GetSonicUI()->CreateString();
-	pStrGraphTitle->Format("策略冲突图示");
-
+	pStrGraphTitle->Format("Policy Conflict Graph");
+	
 	pStrStatic1 = GetSonicUI()->CreateString();
-	pStrStatic1->Format("策略文件1内容：");
+	pStrStatic1->Format("Content of Policy File 1: ");
 	pStrStatic2 = GetSonicUI()->CreateString();
-	pStrStatic2->Format("策略文件2内容：");
+	pStrStatic2->Format("Content of Policy File 2: ");
 
 	//SetWindowLong(m_hWnd, GWL_EXSTYLE, 0x00080000);//WS_EX_LAYERED);
 	SetWindowLong(m_hWnd, GWL_EXSTYLE, GetWindowLong(m_hWnd, GWL_EXSTYLE) | WS_EX_LAYERED);
@@ -190,7 +198,7 @@ void CVisualPCDGraphDlg::InitButton()
 	pImgBtnCloseClick->SetColorKey(RGB(255, 0, 255));
 	
 	pStrBtnClose = GetSonicUI()->CreateString();
-	pStrBtnClose->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='关闭', animation=30/", pImgBtnClose->GetObjectId(), pImgBtnCloseHover->GetObjectId(), 	pImgBtnCloseClick->GetObjectId());
+	pStrBtnClose->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='Close', animation=30/", pImgBtnClose->GetObjectId(), pImgBtnCloseHover->GetObjectId(), 	pImgBtnCloseClick->GetObjectId());
 	pStrBtnClose->Delegate(DELEGATE_EVENT_CLICK, (void*) 1, *this, CVisualPCDGraphDlg::OnClose);
 }
 
@@ -442,12 +450,18 @@ void CVisualPCDGraphDlg::DrawGraph(HDC hDC)
 		if (m_nplcQuints[i].per <= DENYB)
 		{
 			////////////////////////授权策略////////////////////////
-			temp = "策略";
+// 			temp = "策略";
+// 			temp += (itos(m_nplcQuints[i].pol) + "：");
+// 			if (m_nplcQuints[i].per == PERMITA)
+// 				temp += "允许";
+// 			else
+// 				temp += "拒绝";
+			temp = "Policy ";
 			temp += (itos(m_nplcQuints[i].pol) + "：");
 			if (m_nplcQuints[i].per == PERMITA)
-				temp += "允许";
+				temp += "Permit ";
 			else
-				temp += "拒绝";
+				temp += "Deny ";
 			temp += m_nplcQuints[i].act;
 			if (i != 0)
 			{
@@ -520,7 +534,8 @@ void CVisualPCDGraphDlg::DrawGraph(HDC hDC)
 		if (m_nplcQuints[i].per == SUB_CONTAIN)
 		{
 			////////////////////////主体的继承策略////////////////////////
-			temp = "策略";
+//			temp = "策略";
+			temp = "Policy ";
 			temp += (itos(m_nplcQuints[i].pol));
 			TextOut(hDC, m_niSubjects[m_parser->QuintsToSubjectsNO(i)].x * 0.6 + m_niSubjects[m_parser->QuintsToSubjectsNO2(i)].x * 0.4 - 5, 
 				m_niSubjects[m_parser->QuintsToSubjectsNO(i)].y * 0.6 + m_niSubjects[m_parser->QuintsToSubjectsNO2(i)].y * 0.4, 
@@ -564,7 +579,8 @@ void CVisualPCDGraphDlg::DrawGraph(HDC hDC)
 		else if (m_nplcQuints[i].per == RES_CONTAIN)
 		{
 			////////////////////////资源的继承策略////////////////////////
-			temp = "策略";
+//			temp = "策略";
+			temp = "Policy ";
 			temp += (itos(m_nplcQuints[i].pol));
 			TextOut(hDC, m_niResources[m_parser->QuintsToResourcesNO2(i)].x * 0.6 + m_niResources[m_parser->QuintsToResourcesNO(i)].x * 0.4 - 5, 
 				m_niResources[m_parser->QuintsToResourcesNO2(i)].y * 0.6 + m_niResources[m_parser->QuintsToResourcesNO(i)].y * 0.4, 

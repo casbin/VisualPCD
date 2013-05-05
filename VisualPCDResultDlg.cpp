@@ -134,7 +134,7 @@ void CVisualPCDResultDlg::InitWindow()
 	
 	this->SetWindowText("策略冲突检测报告");
 	pStrResultTitle = GetSonicUI()->CreateString();
-	pStrResultTitle->Format("the analysis report of conflict");//策略冲突检测报告");
+	pStrResultTitle->Format("Policy Conflict Detection Report");//策略冲突检测报告");
 	//SetWindowLong(m_hWnd, GWL_EXSTYLE, 0x00080000);//WS_EX_LAYERED);
 	SetWindowLong(m_hWnd, GWL_EXSTYLE, GetWindowLong(m_hWnd, GWL_EXSTYLE) | WS_EX_LAYERED);
 

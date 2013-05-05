@@ -38,7 +38,7 @@ Enquirer::Enquirer(vector<string>& a_nstrABox, vector<Policet>& a_nplcQuints)
 {
 	m_nstrABox.clear();
 	m_nplcQuints.clear();
-	for (int i = 0; i < 16; i ++)
+	for (int i = 0; i < 1; i ++)
 	{
 		m_nstrABox.insert(m_nstrABox.end(), a_nstrABox.begin(), a_nstrABox.end());
 		m_nplcQuints.insert(m_nplcQuints.end(), a_nplcQuints.begin(), a_nplcQuints.end());
@@ -287,10 +287,10 @@ void Enquirer::implementEnquiryAllOld()
 	{
 		if ( i != iTargetPolicy)
 		{
-			implementEnquiry(i, iTargetPolicy);
+			//implementEnquiry(i, iTargetPolicy);
+			implementEnquiry_English(i, iTargetPolicy);
 		}
 	}
-	//implementEnquiry(0, 1);
 
 	cout << "implementEnquiryAll ok." << endl << endl;
 	m_iProgress = 100;
@@ -319,7 +319,8 @@ void Enquirer::implementEnquiryAll()
 	{
 		for (int j = i + 1; j < niDirectIndices.size(); j ++)
 		{
-			implementEnquiry(niDirectIndices[i], niDirectIndices[j]);
+			//implementEnquiry(niDirectIndices[i], niDirectIndices[j]);
+			implementEnquiry_English(niDirectIndices[i], niDirectIndices[j]);
 		}
 	}
 	
@@ -527,26 +528,39 @@ void Enquirer::implementEnquiry(int i, int j)
 
 		m_niSubjectContain.push_back(GetSubjectContain(nstrRes1));
 		m_niResourceContain.push_back(GetResourceContain(nstrRes2));
+	}
+}
 
+void Enquirer::implementEnquiry_English(int i, int j)
+{
+	char temp[100] = "";
+	string s;
+	if (enquirePolicyConflict(i, j))
+	{
+		m_niConflictIndex.push_back(i);
 
-		/*
-		m_nstrReport.push_back("Policy " + itos(i) + " has conflict with Policy " + itos(j) + ".");
+		m_nstrReport.push_back("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")" + 
+			" and Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")" + " have a conflict.");
 
 		if (enquirePolicyPermitA(i))
 		{
-			m_nstrReport.push_back("Policy " + itos(i) + " is a PermitA policy.");
+			m_nstrReport.push_back("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")" + 
+				" is a Permit authorization policy in Policy File 1.");
 		}
 		else if (enquirePolicyDenyA(i))
 		{
-			m_nstrReport.push_back("Policy " + itos(i) + " is a DenyA policy.");
+			m_nstrReport.push_back("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")" + 
+				" is a Deny authorization policy in Policy File 1.");
 		}
 		else if (enquirePolicyPermitB(i))
 		{
-			m_nstrReport.push_back("Policy " + itos(i) + " is a PermitB policy.");
+			m_nstrReport.push_back("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")" + 
+				" is a Permit authorization policy in Policy File 2.");
 		}
 		else if (enquirePolicyDenyB(i))
 		{
-			m_nstrReport.push_back("Policy " + itos(i) + " is a DenyB policy.");
+			m_nstrReport.push_back("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")" + 
+				" is a Deny authorization policy in Policy File 2.");
 		}
 		else
 		{
@@ -555,29 +569,33 @@ void Enquirer::implementEnquiry(int i, int j)
 
 		if (enquirePolicyPermitA(j))
 		{
-			m_nstrReport.push_back("Policy " + itos(j) + " is a PermitA policy.");
+			m_nstrReport.push_back("Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")" + 
+				" is a Permit authorization policy in Policy File 1.");
 		}
 		else if (enquirePolicyDenyA(j))
 		{
-			m_nstrReport.push_back("Policy " + itos(j) + " is a DenyA policy.");
+			m_nstrReport.push_back("Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")" + 
+				" is a Deny authorization policy in Policy File 1.");
 		}
 		else if (enquirePolicyPermitB(j))
 		{
-			m_nstrReport.push_back("Policy " + itos(j) + " is a PermitB policy.");
+			m_nstrReport.push_back("Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")" + 
+				" is a Permit authorization policy in Policy File 2.");
 		}
 		else if (enquirePolicyDenyB(j))
 		{
-			m_nstrReport.push_back("Policy " + itos(j) + " is a DenyB policy.");
+			m_nstrReport.push_back("Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")" + 
+				" is a Deny authorization policy in Policy File 2.");
 		}
 		else
 		{
 			cout << "enquirePolicy(Permit/Deny)(A/B) " + itos(j) + " error." << endl;
 		}
 
-
 		m_nstrReport.push_back("");
-
-		m_nstrReport.push_back("Subject contain chain is:");
+		
+		int flag;
+		m_nstrReport.push_back("The contain chain of subjects is: ");
 		vector<string> nstrRes1 = enquireSubjectContain(i, j);
 		if (nstrRes1.size() == 0)
 		{
@@ -586,19 +604,66 @@ void Enquirer::implementEnquiry(int i, int j)
 			{
 				cout << "enquireSubjectContain error." << endl;
 			}
+			else
+			{
+				flag = 0;
+			}
+		}
+		else
+		{
+			flag = 1;
 		}
 
+		
 		string strRes1;
 		vector<string>::iterator iter;
-		for (iter = nstrRes1.begin(); iter < nstrRes1.end(); iter ++)
+		
+		if (flag == 1)
 		{
-			strRes1 += ((*iter) + " ");
+			strRes1 += ("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")'s subject");
+		}
+		else
+		{
+			strRes1 += ("Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")'s subject");
+		}
+		if (nstrRes1[1] == "The same subject")
+		{
+			if (flag == 1)
+			{
+				strRes1 += (nstrRes1[0] + " and Policy " + itos(m_nplcQuints[j].pol) + "(ID = " +
+					m_nplcQuints[j].policyId + ")'s subject " + nstrRes1[2] + " resembles.");
+			}
+			else
+			{
+				strRes1 += (nstrRes1[0] + " and Policy " + itos(m_nplcQuints[i].pol) + "(ID = " +
+					m_nplcQuints[i].policyId + ")'s subject " + nstrRes1[2] + " resembles.");
+			}
+		}
+		else
+		{
+			for (iter = nstrRes1.begin(); iter < nstrRes1.end(); iter ++)
+			{
+				if (iter != nstrRes1.end() - 1)
+				{
+					strRes1 += ((*iter) + " contains ");
+				}
+				else
+				{
+					if (flag == 1)
+					{
+						strRes1 += ("Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")'s subject " + *iter);
+					}
+					else
+					{
+						strRes1 += ("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")'s subject " + *iter);
+					}
+				}
+			}
 		}
 		m_nstrReport.push_back(strRes1);
 		m_nstrReport.push_back("");
 
-
-		m_nstrReport.push_back("Resource contain chain is:");
+		m_nstrReport.push_back("The contain chain of resources is: ");
 		vector<string> nstrRes2 = enquireResourceContain(i, j);
 		if (nstrRes2.size() == 0)
 		{
@@ -607,16 +672,65 @@ void Enquirer::implementEnquiry(int i, int j)
 			{
 				cout << "enquireResourceContain error." << endl;
 			}
+			else
+			{
+				flag = 0;
+			}
+		}
+		else
+		{
+			flag = 1;
 		}
 
 		string strRes2;
-		for (iter = nstrRes2.begin(); iter < nstrRes2.end(); iter ++)
+		
+		if (flag == 1)
 		{
-			strRes2 += ((*iter) + " ");
+			strRes2 += ("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")'s resource ");
+		}
+		else
+		{
+			strRes2 += ("Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")'s resource ");
+		}
+		if (nstrRes2[1] == "The same resource")
+		{
+			if (flag == 1)
+			{
+				strRes2 += (nstrRes2[0] + " and Policy " + itos(m_nplcQuints[j].pol) + "(ID = " +
+					m_nplcQuints[j].policyId + ")'s resource " + nstrRes2[2] + " resembles.");
+			}
+			else
+			{
+				strRes2 += (nstrRes2[0] + " and Policy " + itos(m_nplcQuints[i].pol) + "(ID = " +
+					m_nplcQuints[i].policyId + ")'s resource " + nstrRes2[2] + " resembles.");
+			}
+		}
+		else
+		{
+			for (iter = nstrRes2.begin(); iter < nstrRes2.end(); iter ++)
+			{
+				if (iter != nstrRes2.end() - 1)
+				{
+					strRes2 += ((*iter) + " contains ");
+				}
+				else
+				{
+					if (flag == 1)
+					{
+						strRes2 += ("Policy " + itos(m_nplcQuints[j].pol) + "(ID = " + m_nplcQuints[j].policyId + ")'s resource " + *iter);
+					}
+					else
+					{
+						strRes2 += ("Policy " + itos(m_nplcQuints[i].pol) + "(ID = " + m_nplcQuints[i].policyId + ")'s resource " + *iter);
+					}
+				}
+			}
 		}
 		m_nstrReport.push_back(strRes2);
+		m_nstrReport.push_back("\n");
 
-		m_nstrReport.push_back("\n\n");*/
+		m_niSubjectContain.push_back(GetSubjectContain(nstrRes1));
+		m_niResourceContain.push_back(GetResourceContain(nstrRes2));
 	}
 }
 

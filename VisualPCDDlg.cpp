@@ -898,9 +898,12 @@ void CVisualPCDDlg::InitWindow()
 {
 	//////////////////////////////////////////////
 	
-	this->SetWindowText("VisualPCD - 策略冲突检测工具");
+// 	this->SetWindowText("VisualPCD - 策略冲突检测工具");
+// 	pStrTitle = GetSonicUI()->CreateString();
+// 	pStrTitle->Format("VisualPCD - 策略冲突检测工具");
+	this->SetWindowText("VisualPCD - Policy Conflict Detector");
 	pStrTitle = GetSonicUI()->CreateString();
-	pStrTitle->Format("VisualPCD - 策略冲突检测工具");
+	pStrTitle->Format("VisualPCD - Policy Conflict Detector");
 
 
 	pImgWndMainWindow = GetSonicUI(	)->CreateImage();
@@ -945,14 +948,23 @@ void CVisualPCDDlg::InitWindow()
 
 void CVisualPCDDlg::InitControl()
 {
+// 	pStrStatic1 = GetSonicUI()->CreateString();
+// 	pStrStatic1->Format("策略文件1路径：");
+// 
+// 	pStrStatic2 = GetSonicUI()->CreateString();
+// 	pStrStatic2->Format("策略文件2路径：");
+// 
+// 	pStrStatic3 = GetSonicUI()->CreateString();
+// 	pStrStatic3->Format("检测所用时间：");
 	pStrStatic1 = GetSonicUI()->CreateString();
-	pStrStatic1->Format("策略文件1路径：");
-
+	pStrStatic1->Format("Path of Policy File 1: ");
+	
 	pStrStatic2 = GetSonicUI()->CreateString();
-	pStrStatic2->Format("策略文件2路径：");
-
+	pStrStatic2->Format("Path of Policy File 2: ");
+	
 	pStrStatic3 = GetSonicUI()->CreateString();
-	pStrStatic3->Format("检测所用时间：");
+	pStrStatic3->Format("Detected Time: ");
+
 
 	RECT rect1 = {50, 280, 290, 293};
 	m_edit1.MoveWindow(&rect1, FALSE);
@@ -1019,12 +1031,18 @@ void CVisualPCDDlg::InitButton()
 	pImgBtnJcClick->Load(*pLocation + "res\\btn-big-click.bmp");
 	pImgBtnJcClick->SetColorKey(RGB(255, 0, 255));
 
+// 	pStrBtnJc = GetSonicUI()->CreateString();
+// 	pStrBtnJc->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='策略冲突检测', animation=30/", pImgBtnJc->GetObjectId(), 
+// 		pImgBtnJcHover->GetObjectId(), 	pImgBtnJcClick->GetObjectId());
+// 	pStrBtnJc->Delegate(DELEGATE_EVENT_CLICK, this, *this, CVisualPCDDlg::OnMove);
+// 	pStrBtnJcText = GetSonicUI()->CreateString();
+// 	pStrBtnJcText->Format("策略冲突检测");
 	pStrBtnJc = GetSonicUI()->CreateString();
-	pStrBtnJc->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='策略冲突检测检测', animation=30/", pImgBtnJc->GetObjectId(), 
+	pStrBtnJc->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='Conflict Detect', animation=30/", pImgBtnJc->GetObjectId(), 
 		pImgBtnJcHover->GetObjectId(), 	pImgBtnJcClick->GetObjectId());
 	pStrBtnJc->Delegate(DELEGATE_EVENT_CLICK, this, *this, CVisualPCDDlg::OnMove);
 	pStrBtnJcText = GetSonicUI()->CreateString();
-	pStrBtnJcText->Format("策略冲突检测");
+	pStrBtnJcText->Format("Conflict Detect");
 	
 	m_iBtnJcX = 115;
 	m_iBtnJcY = 410;
@@ -1046,12 +1064,18 @@ void CVisualPCDDlg::InitButton()
 	pImgBtnXsClick->Load(*pLocation + "res\\btn-xs-click.bmp");
 	pImgBtnXsClick->SetColorKey(RGB(255, 0, 255));
 	
+// 	pStrBtnXs = GetSonicUI()->CreateString();
+// 	pStrBtnXs->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='显示策略文件', animation=30/", pImgBtnXs->GetObjectId(), 
+// 		pImgBtnXsHover->GetObjectId(), 	pImgBtnXsClick->GetObjectId());
+// 	pStrBtnXs->Delegate(DELEGATE_EVENT_CLICK, this, *this, CVisualPCDDlg::OnDisplay);
+// 	pStrBtnXsText = GetSonicUI()->CreateString();
+// 	pStrBtnXsText->Format("显示策略文件");
 	pStrBtnXs = GetSonicUI()->CreateString();
-	pStrBtnXs->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='显示策略文件', animation=30/", pImgBtnXs->GetObjectId(), 
+	pStrBtnXs->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='Policy Files', animation=30/", pImgBtnXs->GetObjectId(), 
 		pImgBtnXsHover->GetObjectId(), 	pImgBtnXsClick->GetObjectId());
 	pStrBtnXs->Delegate(DELEGATE_EVENT_CLICK, this, *this, CVisualPCDDlg::OnDisplay);
 	pStrBtnXsText = GetSonicUI()->CreateString();
-	pStrBtnXsText->Format("显示策略文件");
+	pStrBtnXsText->Format("Policy Files");
 	
 	m_iBtnXsX = 50;
 	m_iBtnXsY = 370;
@@ -1073,12 +1097,18 @@ void CVisualPCDDlg::InitButton()
 	pImgBtnTsClick->Load(*pLocation + "res\\btn-Ts-click.bmp");
 	pImgBtnTsClick->SetColorKey(RGB(255, 0, 255));
 	
+// 	pStrBtnTs = GetSonicUI()->CreateString();
+// 	pStrBtnTs->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='显示策略冲突图示', animation=30/", pImgBtnTs->GetObjectId(), 
+// 		pImgBtnTsHover->GetObjectId(), 	pImgBtnTsClick->GetObjectId());
+// 	pStrBtnTs->Delegate(DELEGATE_EVENT_CLICK, this, *this, CVisualPCDDlg::ShowGraph);
+// 	pStrBtnTsText = GetSonicUI()->CreateString();
+// 	pStrBtnTsText->Format("显示策略冲突图示");
 	pStrBtnTs = GetSonicUI()->CreateString();
-	pStrBtnTs->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='显示策略冲突图示', animation=30/", pImgBtnTs->GetObjectId(), 
+	pStrBtnTs->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='Conflict Graph', animation=30/", pImgBtnTs->GetObjectId(), 
 		pImgBtnTsHover->GetObjectId(), 	pImgBtnTsClick->GetObjectId());
 	pStrBtnTs->Delegate(DELEGATE_EVENT_CLICK, this, *this, CVisualPCDDlg::ShowGraph);
 	pStrBtnTsText = GetSonicUI()->CreateString();
-	pStrBtnTsText->Format("显示策略冲突图示");
+	pStrBtnTsText->Format("Conflict Graph");
 	
 	m_iBtnTsX = 180;
 	m_iBtnTsY = 370;
@@ -1094,12 +1124,12 @@ void CVisualPCDDlg::InitButton()
 	//::SetTimer(pThis->m_hWnd, ANTI_TWINKLE, 20, (TIMERPROC) CVisualPCDDlg::TimerProc);
 	///////////////////////////////////////////////////////////
 	pStrBtnMin = GetSonicUI()->CreateString();
-	pStrBtnMin->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='最小化', animation=30/", pImgBtnMin->GetObjectId(), 
+	pStrBtnMin->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='Minimize', animation=30/", pImgBtnMin->GetObjectId(), 
 		pImgBtnMinHover->GetObjectId(), 	pImgBtnMinClick->GetObjectId());
 	pStrBtnMin->Delegate(DELEGATE_EVENT_CLICK, (void*) 0, *this, CVisualPCDDlg::FadeOut);
 	
 	pStrBtnClose = GetSonicUI()->CreateString();
-	pStrBtnClose->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='关闭', animation=30/", pImgBtnClose->GetObjectId(), pImgBtnCloseHover->GetObjectId(), 	pImgBtnCloseClick->GetObjectId());
+	pStrBtnClose->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='Close', animation=30/", pImgBtnClose->GetObjectId(), pImgBtnCloseHover->GetObjectId(), 	pImgBtnCloseClick->GetObjectId());
 	pStrBtnClose->Delegate(DELEGATE_EVENT_CLICK, (void*) 1, *this, CVisualPCDDlg::FadeOut);
 ///////////////////////////////////////////////////////////////
 	
@@ -1205,15 +1235,22 @@ void CVisualPCDDlg::InitPopupMenu()
 	pStrPumItem[3]->Delegate(DELEGATE_EVENT_CLICK, (void*) 0, *this, CVisualPCDDlg::ShowAbout);
 	pStrPumItem[4]->Delegate(DELEGATE_EVENT_CLICK, (void*) 0, *this, CVisualPCDDlg::CloseApp);
 	///////////////////////////////////////////////////////////////////////
+// 	pStrBtnMenu = GetSonicUI()->CreateString();
+// 	pStrBtnMenu->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='菜单', animation=255/", pImgBtnMenu->GetObjectId(), 
+// 		pImgBtnMenuHover->GetObjectId(), 	pImgBtnMenuClick->GetObjectId());
+// 	pStrBtnMenu->Delegate(DELEGATE_EVENT_CLICK, (void*) 1, *this, CVisualPCDDlg::ShowPopupMenu);
+// 	
+// 	pStrBtnMenuShadow = GetSonicUI()->CreateString();
+// 	pStrBtnMenuShadow->Format("/a, p=%d, linkc=0, linkt='菜单', animation=255/", pImgBtnMenuClick->GetObjectId());
+// 	pStrBtnMenuShadow->Delegate(DELEGATE_EVENT_CLICK, (void*) 1, *this, CVisualPCDDlg::ShowPopupMenu);
 	pStrBtnMenu = GetSonicUI()->CreateString();
-	pStrBtnMenu->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='菜单', animation=255/", pImgBtnMenu->GetObjectId(), 
+	pStrBtnMenu->Format("/a, p=%d, ph=%d, pc=%d, linkc=0, linkt='Menu', animation=255/", pImgBtnMenu->GetObjectId(), 
 		pImgBtnMenuHover->GetObjectId(), 	pImgBtnMenuClick->GetObjectId());
 	pStrBtnMenu->Delegate(DELEGATE_EVENT_CLICK, (void*) 1, *this, CVisualPCDDlg::ShowPopupMenu);
 	
 	pStrBtnMenuShadow = GetSonicUI()->CreateString();
-	pStrBtnMenuShadow->Format("/a, p=%d, linkc=0, linkt='菜单', animation=255/", pImgBtnMenuClick->GetObjectId());
-	pStrBtnMenuShadow->Delegate(DELEGATE_EVENT_CLICK, (void*) 1, *this, CVisualPCDDlg::ShowPopupMenu);
-	
+	pStrBtnMenuShadow->Format("/a, p=%d, linkc=0, linkt='Menu', animation=255/", pImgBtnMenuClick->GetObjectId());
+	pStrBtnMenuShadow->Delegate(DELEGATE_EVENT_CLICK, (void*) 1, *this, CVisualPCDDlg::ShowPopupMenu);	
 	m_iMenuShadow = 0;
 	
 	m_iMenuButtonX = 5;
@@ -1238,7 +1275,7 @@ void CVisualPCDDlg::InitPopupMenu()
 	//m_rctMenu = {m_iMenuCutX, m_iMenuCutY, m_iMenuCutX + 106, m_iMenuCutY + 111};	
 
 	pStrBtnMenuText = GetSonicUI()->CreateString();
-	pStrBtnMenuText->Format("菜单");
+	pStrBtnMenuText->Format("Menu");
 	
 }
 
@@ -1716,7 +1753,7 @@ void CVisualPCDDlg::RestoreConfig(ISonicString* pStr, LPVOID)
 static UINT OpenFileAThread(LPVOID pParam)
 {
 	CVisualPCDFileDlg* dlg = new CVisualPCDFileDlg(TRUE, NULL, NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
-		_T("XACML策略文件(*.xml)|*.xml||"), pThis, FILEDIALOG_FILEA);
+		_T("XACML Policy File(*.xml)|*.xml||"), pThis, FILEDIALOG_FILEA);
 	dlg->DoModal();
 	if (pThis->m_cstrFileALocation != "")
 	{
@@ -1729,7 +1766,7 @@ static UINT OpenFileAThread(LPVOID pParam)
 static UINT OpenFileBThread(LPVOID pParam)
 {
 	CVisualPCDFileDlg* dlg = new CVisualPCDFileDlg(TRUE, NULL, NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
-		_T("XACML策略文件(*.xml)|*.xml||"), pThis, FILEDIALOG_FILEB);
+		_T("XACML Policy File(*.xml)|*.xml||"), pThis, FILEDIALOG_FILEB);
 	dlg->DoModal();
 	if (pThis->m_cstrFileBLocation != "")
 	{

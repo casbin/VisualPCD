@@ -1,0 +1,1030 @@
+Mappings from MEMORY_BASIC_INFORMATION struct in winnt.h:
+        0 -      ffff       65536     free            ----
+    10000 -     1ffff       65536   commit  mapped    rw--
+    20000 -     20fff        4096   commit private    rw--
+    21000 -     2ffff       61440     free            ----
+    30000 -     33fff       16384   commit  mapped    r---
+    34000 -     3ffff       49152     free            ----
+    40000 -     40fff        4096   commit private    rw--
+    41000 -     4ffff       61440     free            ----
+    50000 -     51fff        8192   commit  mapped    r---
+    52000 -     5ffff       57344     free            ----
+    60000 -     61fff        8192   commit  mapped    r---
+    62000 -     6ffff       57344     free            ----
+    70000 -     d6fff      421888   commit  mapped    r---
+    d7000 -     dffff       36864     free            ----
+    e0000 -     e0fff        4096   commit private    rw--
+    e1000 -     effff       61440     free            ----
+    f0000 -     f0fff        4096   commit  mapped    rw--
+    f1000 -     fffff       61440     free            ----
+   100000 -    101fff        8192   commit  mapped    r---
+   102000 -    10ffff       57344     free            ----
+   110000 -    146fff      225280   commit private    rw--
+   147000 -    14ffff       36864  reserve private        
+   150000 -    15cfff       53248   commit  mapped    r---
+   15d000 -    15ffff       12288     free            ----
+   160000 -    162fff       12288   commit  mapped    rw--
+   163000 -    16ffff       53248     free            ----
+   170000 -    170fff        4096   commit  mapped    rw-c
+   171000 -    17ffff       61440     free            ----
+   180000 -    181fff        8192   commit private    rw--
+   182000 -    18ffff       57344     free            ----
+   190000 -    1ebfff      376832   commit private    rw--
+   1ec000 -    28ffff      671744  reserve private        
+   290000 -    2aafff      110592   commit  mapped    r---
+   2ab000 -    34ffff      675840  reserve  mapped        
+   350000 -    352fff       12288   commit  mapped    r---
+   353000 -    357fff       20480  reserve  mapped        
+   358000 -    35ffff       32768     free            ----
+   360000 -    360fff        4096   commit private    rw--
+   361000 -    36ffff       61440     free            ----
+   370000 -    370fff        4096   commit  mapped    rw-c
+   371000 -    3bffff      323584     free            ----
+   3c0000 -    3cffff       65536   commit private    rw--
+   3d0000 -    3fffff      196608     free            ----
+   400000 -    400fff        4096   commit   image    r---  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\RacerPro.exe
+   401000 -    406fff       24576   commit   image    r-x-  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\RacerPro.exe
+   407000 -    407fff        4096   commit   image    r---  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\RacerPro.exe
+   408000 -    41dfff       90112   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\RacerPro.exe
+   41e000 -    480fff      405504   commit   image    r---  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\RacerPro.exe
+   481000 -    48ffff       61440     free            ----
+   490000 -   1488fff    16748544  reserve private        
+  1489000 -   1489fff        4096   commit private    rw-- (guard)
+  148a000 -   148ffff       24576   commit private    rw--
+  1490000 -   175efff     2945024   commit  mapped    r---
+  175f000 -   175ffff        4096     free            ----
+  1760000 -   183efff      913408   commit  mapped    r---
+  183f000 -   183ffff        4096     free            ----
+  1840000 -   1840fff        4096   commit private    rw--
+  1841000 -   18bffff      520192  reserve private        
+  18c0000 -   18c2fff       12288   commit private    rw--
+  18c3000 -   18cffff       53248  reserve private        
+  18d0000 -   18d5fff       24576   commit private    rw--
+  18d6000 -   19cffff     1024000  reserve private        
+  19d0000 -   1a3ffff      458752     free            ----
+  1a40000 -   1a65fff      155648   commit private    rw--
+  1a66000 -   1a7ffff      106496  reserve private        
+  1a80000 -   1aa2fff      143360   commit private    rw--
+  1aa3000 -   1b7ffff      905216  reserve private        
+  1b80000 -   1ba0fff      135168   commit private    rw--
+  1ba1000 -   1bbffff      126976  reserve private        
+  1bc0000 -   1bfffff      262144     free            ----
+  1c00000 -   1c03fff       16384   commit private    rw--
+  1c04000 -   1c3ffff      245760  reserve private        
+  1c40000 -   1c70fff      200704   commit private    rw--
+  1c71000 -   1c7ffff       61440  reserve private        
+  1c80000 -   248ffff     8454144     free            ----
+  2490000 -   2590fff     1052672   commit  mapped    r---
+  2591000 -   262ffff      651264     free            ----
+  2630000 -   263ffff       65536   commit private    rw--
+  2640000 -   299afff     3518464   commit  mapped    r---
+  299b000 -   323ffff     9064448  reserve  mapped        
+  3240000 -   3b6ffff     9633792   commit  mapped    r---
+  3b70000 -   4b65fff    16736256  reserve private        
+  4b66000 -   4b66fff        4096   commit private    rw-- (guard)
+  4b67000 -   4b6ffff       36864   commit private    rw--
+  4b70000 -   5b6cfff    16764928  reserve private        
+  5b6d000 -   5b6efff        8192   commit private    rw-- (guard)
+  5b6f000 -   5b6ffff        4096   commit private    rw--
+  5b70000 -   6b6cfff    16764928  reserve private        
+  6b6d000 -   6b6dfff        4096   commit private    rw-- (guard)
+  6b6e000 -   6b6ffff        8192   commit private    rw--
+  6b70000 -   7b6cfff    16764928  reserve private        
+  7b6d000 -   7b6efff        8192   commit private    rw-- (guard)
+  7b6f000 -   7b6ffff        4096   commit private    rw--
+  7b70000 -   8b6cfff    16764928  reserve private        
+  8b6d000 -   8b6efff        8192   commit private    rw-- (guard)
+  8b6f000 -   8b6ffff        4096   commit private    rw--
+  8b70000 -   9b6cfff    16764928  reserve private        
+  9b6d000 -   9b6efff        8192   commit private    rw-- (guard)
+  9b6f000 -   9b6ffff        4096   commit private    rw--
+  9b70000 -   ab6cfff    16764928  reserve private        
+  ab6d000 -   ab6efff        8192   commit private    rw-- (guard)
+  ab6f000 -   ab6ffff        4096   commit private    rw--
+  ab70000 -   bb6cfff    16764928  reserve private        
+  bb6d000 -   bb6efff        8192   commit private    rw-- (guard)
+  bb6f000 -   bb6ffff        4096   commit private    rw--
+  bb70000 -   cb6cfff    16764928  reserve private        
+  cb6d000 -   cb6efff        8192   commit private    rw-- (guard)
+  cb6f000 -   cb6ffff        4096   commit private    rw--
+  cb70000 -   db6cfff    16764928  reserve private        
+  db6d000 -   db6efff        8192   commit private    rw-- (guard)
+  db6f000 -   db6ffff        4096   commit private    rw--
+  db70000 -   eb6cfff    16764928  reserve private        
+  eb6d000 -   eb6dfff        4096   commit private    rw-- (guard)
+  eb6e000 -   eb6ffff        8192   commit private    rw--
+  eb70000 -   fb6cfff    16764928  reserve private        
+  fb6d000 -   fb6efff        8192   commit private    rw-- (guard)
+  fb6f000 -   fb6ffff        4096   commit private    rw--
+  fb70000 -   fffffff     4784128     free            ----
+ 10000000 -  10000fff        4096   commit   image    r---  C:\Program Files\TCB Networks\StrokeIt\mhook.dll
+ 10001000 -  10002fff        8192   commit   image    r-x-  C:\Program Files\TCB Networks\StrokeIt\mhook.dll
+ 10003000 -  10003fff        4096   commit   image    rw--  C:\Program Files\TCB Networks\StrokeIt\mhook.dll
+ 10004000 -  10004fff        4096   commit   image    r---  C:\Program Files\TCB Networks\StrokeIt\mhook.dll
+ 10005000 -  10005fff        4096   commit   image    rw--  C:\Program Files\TCB Networks\StrokeIt\mhook.dll
+ 10006000 -  10006fff        4096   commit   image    r---  C:\Program Files\TCB Networks\StrokeIt\mhook.dll
+ 10007000 -  1000ffff       36864     free            ----
+ 10010000 -  1100cfff    16764928  reserve private        
+ 1100d000 -  1100dfff        4096   commit private    rw-- (guard)
+ 1100e000 -  1100ffff        8192   commit private    rw--
+ 11010000 -  12009fff    16752640  reserve private        
+ 1200a000 -  1200afff        4096   commit private    rw-- (guard)
+ 1200b000 -  1200ffff       20480   commit private    rw--
+ 12010000 -  13002fff    16723968  reserve private        
+ 13003000 -  13003fff        4096   commit private    rw-- (guard)
+ 13004000 -  1300ffff       49152   commit private    rw--
+ 13010000 -  1400cfff    16764928  reserve private        
+ 1400d000 -  1400efff        8192   commit private    rw-- (guard)
+ 1400f000 -  1400ffff        4096   commit private    rw--
+ 14010000 -  1500cfff    16764928  reserve private        
+ 1500d000 -  1500efff        8192   commit private    rw-- (guard)
+ 1500f000 -  1500ffff        4096   commit private    rw--
+ 15010000 -  1600cfff    16764928  reserve private        
+ 1600d000 -  1600efff        8192   commit private    rw-- (guard)
+ 1600f000 -  1600ffff        4096   commit private    rw--
+ 16010000 -  1700cfff    16764928  reserve private        
+ 1700d000 -  1700efff        8192   commit private    rw-- (guard)
+ 1700f000 -  1700ffff        4096   commit private    rw--
+ 17010000 -  1800cfff    16764928  reserve private        
+ 1800d000 -  1800efff        8192   commit private    rw-- (guard)
+ 1800f000 -  1800ffff        4096   commit private    rw--
+ 18010000 -  1900cfff    16764928  reserve private        
+ 1900d000 -  1900efff        8192   commit private    rw-- (guard)
+ 1900f000 -  1900ffff        4096   commit private    rw--
+ 19010000 -  1a00cfff    16764928  reserve private        
+ 1a00d000 -  1a00efff        8192   commit private    rw-- (guard)
+ 1a00f000 -  1a00ffff        4096   commit private    rw--
+ 1a010000 -  1b00cfff    16764928  reserve private        
+ 1b00d000 -  1b00efff        8192   commit private    rw-- (guard)
+ 1b00f000 -  1b00ffff        4096   commit private    rw--
+ 1b010000 -  1c00cfff    16764928  reserve private        
+ 1c00d000 -  1c00efff        8192   commit private    rw-- (guard)
+ 1c00f000 -  1c00ffff        4096   commit private    rw--
+ 1c010000 -  1d00cfff    16764928  reserve private        
+ 1d00d000 -  1d00efff        8192   commit private    rw-- (guard)
+ 1d00f000 -  1d00ffff        4096   commit private    rw--
+ 1d010000 -  1e00cfff    16764928  reserve private        
+ 1e00d000 -  1e00efff        8192   commit private    rw-- (guard)
+ 1e00f000 -  1e00ffff        4096   commit private    rw--
+ 1e010000 -  1f00cfff    16764928  reserve private        
+ 1f00d000 -  1f00efff        8192   commit private    rw-- (guard)
+ 1f00f000 -  1f00ffff        4096   commit private    rw--
+ 1f010000 -  1fffffff    16711680     free            ----
+ 20000000 -  20005fff       24576   commit  mapped    rw--
+ 20006000 -  20007fff        8192   commit  mapped    rw-c
+ 20008000 -  20008fff        4096   commit  mapped    rw--
+ 20009000 -  20009fff        4096   commit  mapped    rw-c
+ 2000a000 -  2000afff        4096   commit  mapped    rw--
+ 2000b000 -  2000bfff        4096   commit  mapped    rw-c
+ 2000c000 -  2000cfff        4096   commit  mapped    rw--
+ 2000d000 -  2000efff        8192   commit  mapped    rw-c
+ 2000f000 -  20010fff        8192   commit  mapped    rw--
+ 20011000 -  20014fff       16384   commit  mapped    rw-c
+ 20015000 -  20015fff        4096   commit  mapped    rw--
+ 20016000 -  20019fff       16384   commit  mapped    rw-c
+ 2001a000 -  2001afff        4096   commit  mapped    rw--
+ 2001b000 -  2001dfff       12288   commit  mapped    rw-c
+ 2001e000 -  2001ffff        8192   commit  mapped    rw--
+ 20020000 -  20021fff        8192   commit  mapped    rw-c
+ 20022000 -  20022fff        4096   commit  mapped    rw--
+ 20023000 -  20025fff       12288   commit  mapped    rw-c
+ 20026000 -  20028fff       12288   commit  mapped    rw--
+ 20029000 -  2002afff        8192   commit  mapped    rw-c
+ 2002b000 -  2002bfff        4096   commit  mapped    rw--
+ 2002c000 -  20030fff       20480   commit  mapped    rw-c
+ 20031000 -  20031fff        4096   commit  mapped    rw--
+ 20032000 -  20039fff       32768   commit  mapped    rw-c
+ 2003a000 -  2003afff        4096   commit  mapped    rw--
+ 2003b000 -  2003ffff       20480   commit  mapped    rw-c
+ 20040000 -  20041fff        8192   commit  mapped    rw--
+ 20042000 -  20042fff        4096   commit  mapped    rw-c
+ 20043000 -  20045fff       12288   commit  mapped    rw--
+ 20046000 -  2005bfff       90112   commit  mapped    rw-c
+ 2005c000 -  2005cfff        4096   commit  mapped    rw--
+ 2005d000 -  200e6fff      565248   commit  mapped    rw-c
+ 200e7000 -  200e7fff        4096   commit  mapped    rw--
+ 200e8000 -  201effff     1081344   commit  mapped    rw-c
+ 201f0000 -  201f1fff        8192   commit  mapped    rw--
+ 201f2000 -  201f3fff        8192   commit  mapped    rw-c
+ 201f4000 -  201f4fff        4096   commit  mapped    rw--
+ 201f5000 -  2023cfff      294912   commit  mapped    rw-c
+ 2023d000 -  2023dfff        4096   commit  mapped    rw--
+ 2023e000 -  2023ffff        8192   commit  mapped    rw-c
+ 20240000 -  20240fff        4096   commit  mapped    rw--
+ 20241000 -  2024bfff       45056   commit  mapped    rw-c
+ 2024c000 -  2024cfff        4096   commit  mapped    rw--
+ 2024d000 -  20294fff      294912   commit  mapped    rw-c
+ 20295000 -  20295fff        4096   commit  mapped    rw--
+ 20296000 -  20299fff       16384   commit  mapped    rw-c
+ 2029a000 -  2029afff        4096   commit  mapped    rw--
+ 2029b000 -  202a0fff       24576   commit  mapped    rw-c
+ 202a1000 -  202a1fff        4096   commit  mapped    rw--
+ 202a2000 -  202a2fff        4096   commit  mapped    rw-c
+ 202a3000 -  202a3fff        4096   commit  mapped    rw--
+ 202a4000 -  202a4fff        4096   commit  mapped    rw-c
+ 202a5000 -  202a5fff        4096   commit  mapped    rw--
+ 202a6000 -  202abfff       24576   commit  mapped    rw-c
+ 202ac000 -  202acfff        4096   commit  mapped    rw--
+ 202ad000 -  202b1fff       20480   commit  mapped    rw-c
+ 202b2000 -  202b2fff        4096   commit  mapped    rw--
+ 202b3000 -  202b3fff        4096   commit  mapped    rw-c
+ 202b4000 -  202b4fff        4096   commit  mapped    rw--
+ 202b5000 -  202bcfff       32768   commit  mapped    rw-c
+ 202bd000 -  202bdfff        4096   commit  mapped    rw--
+ 202be000 -  202e4fff      159744   commit  mapped    rw-c
+ 202e5000 -  202e6fff        8192   commit  mapped    rw--
+ 202e7000 -  202e8fff        8192   commit  mapped    rw-c
+ 202e9000 -  202e9fff        4096   commit  mapped    rw--
+ 202ea000 -  202f2fff       36864   commit  mapped    rw-c
+ 202f3000 -  202f3fff        4096   commit  mapped    rw--
+ 202f4000 -  202fafff       28672   commit  mapped    rw-c
+ 202fb000 -  202fbfff        4096   commit  mapped    rw--
+ 202fc000 -  202fcfff        4096   commit  mapped    rw-c
+ 202fd000 -  202fdfff        4096   commit  mapped    rw--
+ 202fe000 -  202fefff        4096   commit  mapped    rw-c
+ 202ff000 -  20300fff        8192   commit  mapped    rw--
+ 20301000 -  20306fff       24576   commit  mapped    rw-c
+ 20307000 -  20307fff        4096   commit  mapped    rw--
+ 20308000 -  20317fff       65536   commit  mapped    rw-c
+ 20318000 -  20318fff        4096   commit  mapped    rw--
+ 20319000 -  2031efff       24576   commit  mapped    rw-c
+ 2031f000 -  20320fff        8192   commit  mapped    rw--
+ 20321000 -  20321fff        4096   commit  mapped    rw-c
+ 20322000 -  20322fff        4096   commit  mapped    rw--
+ 20323000 -  20324fff        8192   commit  mapped    rw-c
+ 20325000 -  20325fff        4096   commit  mapped    rw--
+ 20326000 -  2032cfff       28672   commit  mapped    rw-c
+ 2032d000 -  2032dfff        4096   commit  mapped    rw--
+ 2032e000 -  20332fff       20480   commit  mapped    rw-c
+ 20333000 -  20333fff        4096   commit  mapped    rw--
+ 20334000 -  2033afff       28672   commit  mapped    rw-c
+ 2033b000 -  2033bfff        4096   commit  mapped    rw--
+ 2033c000 -  20351fff       90112   commit  mapped    rw-c
+ 20352000 -  20352fff        4096   commit  mapped    rw--
+ 20353000 -  20360fff       57344   commit  mapped    rw-c
+ 20361000 -  20363fff       12288   commit  mapped    rw--
+ 20364000 -  20367fff       16384   commit  mapped    rw-c
+ 20368000 -  20368fff        4096   commit  mapped    rw--
+ 20369000 -  2036afff        8192   commit  mapped    rw-c
+ 2036b000 -  2036bfff        4096   commit  mapped    rw--
+ 2036c000 -  20373fff       32768   commit  mapped    rw-c
+ 20374000 -  20374fff        4096   commit  mapped    rw--
+ 20375000 -  20381fff       53248   commit  mapped    rw-c
+ 20382000 -  20382fff        4096   commit  mapped    rw--
+ 20383000 -  2038cfff       40960   commit  mapped    rw-c
+ 2038d000 -  2038dfff        4096   commit  mapped    rw--
+ 2038e000 -  20395fff       32768   commit  mapped    rw-c
+ 20396000 -  20396fff        4096   commit  mapped    rw--
+ 20397000 -  2039efff       32768   commit  mapped    rw-c
+ 2039f000 -  2039ffff        4096   commit  mapped    rw--
+ 203a0000 -  203a0fff        4096   commit  mapped    rw-c
+ 203a1000 -  203a1fff        4096   commit  mapped    rw--
+ 203a2000 -  203a6fff       20480   commit  mapped    rw-c
+ 203a7000 -  203a7fff        4096   commit  mapped    rw--
+ 203a8000 -  203a8fff        4096   commit  mapped    rw-c
+ 203a9000 -  203a9fff        4096   commit  mapped    rw--
+ 203aa000 -  203aefff       20480   commit  mapped    rw-c
+ 203af000 -  203affff        4096   commit  mapped    rw--
+ 203b0000 -  203bbfff       49152   commit  mapped    rw-c
+ 203bc000 -  203c2fff       28672   commit  mapped    rw--
+ 203c3000 -  203cdfff       45056   commit  mapped    rw-c
+ 203ce000 -  203d1fff       16384   commit  mapped    rw--
+ 203d2000 -  203d2fff        4096   commit  mapped    rw-c
+ 203d3000 -  203d4fff        8192   commit  mapped    rw--
+ 203d5000 -  203e4fff       65536   commit  mapped    rw-c
+ 203e5000 -  203e6fff        8192   commit  mapped    rw--
+ 203e7000 -  203fcfff       90112   commit  mapped    rw-c
+ 203fd000 -  203fefff        8192   commit  mapped    rw--
+ 203ff000 -  20401fff       12288   commit  mapped    rw-c
+ 20402000 -  20403fff        8192   commit  mapped    rw--
+ 20404000 -  20419fff       90112   commit  mapped    rw-c
+ 2041a000 -  2041afff        4096   commit  mapped    rw--
+ 2041b000 -  2041cfff        8192   commit  mapped    rw-c
+ 2041d000 -  2041dfff        4096   commit  mapped    rw--
+ 2041e000 -  2042efff       69632   commit  mapped    rw-c
+ 2042f000 -  2042ffff        4096   commit  mapped    rw--
+ 20430000 -  20430fff        4096   commit  mapped    rw-c
+ 20431000 -  20431fff        4096   commit  mapped    rw--
+ 20432000 -  20434fff       12288   commit  mapped    rw-c
+ 20435000 -  20435fff        4096   commit  mapped    rw--
+ 20436000 -  20442fff       53248   commit  mapped    rw-c
+ 20443000 -  20443fff        4096   commit  mapped    rw--
+ 20444000 -  2045dfff      106496   commit  mapped    rw-c
+ 2045e000 -  2045efff        4096   commit  mapped    rw--
+ 2045f000 -  20460fff        8192   commit  mapped    rw-c
+ 20461000 -  20461fff        4096   commit  mapped    rw--
+ 20462000 -  2046dfff       49152   commit  mapped    rw-c
+ 2046e000 -  2046efff        4096   commit  mapped    rw--
+ 2046f000 -  20484fff       90112   commit  mapped    rw-c
+ 20485000 -  20485fff        4096   commit  mapped    rw--
+ 20486000 -  2048cfff       28672   commit  mapped    rw-c
+ 2048d000 -  2048dfff        4096   commit  mapped    rw--
+ 2048e000 -  2048efff        4096   commit  mapped    rw-c
+ 2048f000 -  2048ffff        4096   commit  mapped    rw--
+ 20490000 -  204a1fff       73728   commit  mapped    rw-c
+ 204a2000 -  204a3fff        8192   commit  mapped    rw--
+ 204a4000 -  204c4fff      135168   commit  mapped    rw-c
+ 204c5000 -  204c7fff       12288   commit  mapped    rw--
+ 204c8000 -  204c8fff        4096   commit  mapped    rw-c
+ 204c9000 -  204c9fff        4096   commit  mapped    rw--
+ 204ca000 -  204cdfff       16384   commit  mapped    rw-c
+ 204ce000 -  204cefff        4096   commit  mapped    rw--
+ 204cf000 -  204d3fff       20480   commit  mapped    rw-c
+ 204d4000 -  204d4fff        4096   commit  mapped    rw--
+ 204d5000 -  204e8fff       81920   commit  mapped    rw-c
+ 204e9000 -  204eefff       24576   commit  mapped    rw--
+ 204ef000 -  204f6fff       32768   commit  mapped    rw-c
+ 204f7000 -  204f7fff        4096   commit  mapped    rw--
+ 204f8000 -  204fafff       12288   commit  mapped    rw-c
+ 204fb000 -  204fcfff        8192   commit  mapped    rw--
+ 204fd000 -  20502fff       24576   commit  mapped    rw-c
+ 20503000 -  20504fff        8192   commit  mapped    rw--
+ 20505000 -  20508fff       16384   commit  mapped    rw-c
+ 20509000 -  2050afff        8192   commit  mapped    rw--
+ 2050b000 -  20532fff      163840   commit  mapped    rw-c
+ 20533000 -  20537fff       20480   commit  mapped    rw--
+ 20538000 -  20543fff       49152   commit  mapped    rw-c
+ 20544000 -  20544fff        4096   commit  mapped    rw--
+ 20545000 -  2054efff       40960   commit  mapped    rw-c
+ 2054f000 -  20551fff       12288   commit  mapped    rw--
+ 20552000 -  205d2fff      528384   commit  mapped    rw-c
+ 205d3000 -  205d4fff        8192   commit  mapped    rw--
+ 205d5000 -  205edfff      102400   commit  mapped    rw-c
+ 205ee000 -  205eefff        4096   commit  mapped    rw--
+ 205ef000 -  205fafff       49152   commit  mapped    rw-c
+ 205fb000 -  205fbfff        4096   commit  mapped    rw--
+ 205fc000 -  205fffff       16384   commit  mapped    rw-c
+ 20600000 -  20601fff        8192   commit  mapped    rw--
+ 20602000 -  20602fff        4096   commit  mapped    rw-c
+ 20603000 -  20605fff       12288   commit  mapped    rw--
+ 20606000 -  20614fff       61440   commit  mapped    rw-c
+ 20615000 -  20616fff        8192   commit  mapped    rw--
+ 20617000 -  2061efff       32768   commit  mapped    rw-c
+ 2061f000 -  2061ffff        4096   commit  mapped    rw--
+ 20620000 -  20628fff       36864   commit  mapped    rw-c
+ 20629000 -  20629fff        4096   commit  mapped    rw--
+ 2062a000 -  2062efff       20480   commit  mapped    rw-c
+ 2062f000 -  2062ffff        4096   commit  mapped    rw--
+ 20630000 -  20635fff       24576   commit  mapped    rw-c
+ 20636000 -  20637fff        8192   commit  mapped    rw--
+ 20638000 -  20654fff      118784   commit  mapped    rw-c
+ 20655000 -  20656fff        8192   commit  mapped    rw--
+ 20657000 -  2065afff       16384   commit  mapped    rw-c
+ 2065b000 -  2065ffff       20480   commit  mapped    rw--
+ 20660000 -  20670fff       69632   commit  mapped    rw-c
+ 20671000 -  20671fff        4096   commit  mapped    rw--
+ 20672000 -  20673fff        8192   commit  mapped    rw-c
+ 20674000 -  20674fff        4096   commit  mapped    rw--
+ 20675000 -  20679fff       20480   commit  mapped    rw-c
+ 2067a000 -  2067afff        4096   commit  mapped    rw--
+ 2067b000 -  2067dfff       12288   commit  mapped    rw-c
+ 2067e000 -  2067efff        4096   commit  mapped    rw--
+ 2067f000 -  206b1fff      208896   commit  mapped    rw-c
+ 206b2000 -  206b2fff        4096   commit  mapped    rw--
+ 206b3000 -  206bafff       32768   commit  mapped    rw-c
+ 206bb000 -  206bbfff        4096   commit  mapped    rw--
+ 206bc000 -  206c9fff       57344   commit  mapped    rw-c
+ 206ca000 -  206cafff        4096   commit  mapped    rw--
+ 206cb000 -  206d0fff       24576   commit  mapped    rw-c
+ 206d1000 -  206d2fff        8192   commit  mapped    rw--
+ 206d3000 -  2073afff      425984   commit  mapped    rw-c
+ 2073b000 -  2073bfff        4096   commit  mapped    rw--
+ 2073c000 -  207e5fff      696320   commit  mapped    rw-c
+ 207e6000 -  207e6fff        4096   commit  mapped    rw--
+ 207e7000 -  208f4fff     1105920   commit  mapped    rw-c
+ 208f5000 -  208f5fff        4096   commit  mapped    rw--
+ 208f6000 -  2096ffff      499712   commit  mapped    rw-c
+ 20970000 -  20970fff        4096   commit  mapped    rw--
+ 20971000 -  2097cfff       49152   commit  mapped    rw-c
+ 2097d000 -  2097dfff        4096   commit  mapped    rw--
+ 2097e000 -  2098bfff       57344   commit  mapped    rw-c
+ 2098c000 -  2098cfff        4096   commit  mapped    rw--
+ 2098d000 -  2099efff       73728   commit  mapped    rw-c
+ 2099f000 -  2099ffff        4096   commit  mapped    rw--
+ 209a0000 -  209a0fff        4096   commit  mapped    rw-c
+ 209a1000 -  209a1fff        4096   commit  mapped    rw--
+ 209a2000 -  209a5fff       16384   commit  mapped    rw-c
+ 209a6000 -  209a6fff        4096   commit  mapped    rw--
+ 209a7000 -  209c8fff      139264   commit  mapped    rw-c
+ 209c9000 -  209c9fff        4096   commit  mapped    rw--
+ 209ca000 -  209d1fff       32768   commit  mapped    rw-c
+ 209d2000 -  209d2fff        4096   commit  mapped    rw--
+ 209d3000 -  209effff      118784   commit  mapped    rw-c
+ 209f0000 -  209f1fff        8192   commit  mapped    rw--
+ 209f2000 -  209fefff       53248   commit  mapped    rw-c
+ 209ff000 -  209fffff        4096   commit  mapped    rw--
+ 20a00000 -  20a0ffff       65536   commit  mapped    rw-c
+ 20a10000 -  20a10fff        4096   commit  mapped    rw--
+ 20a11000 -  20a40fff      196608   commit  mapped    rw-c
+ 20a41000 -  20a41fff        4096   commit  mapped    rw--
+ 20a42000 -  20a5afff      102400   commit  mapped    rw-c
+ 20a5b000 -  20a5bfff        4096   commit  mapped    rw--
+ 20a5c000 -  20a8ffff      212992   commit  mapped    rw-c
+ 20a90000 -  20a90fff        4096   commit  mapped    rw--
+ 20a91000 -  20b38fff      688128   commit  mapped    rw-c
+ 20b39000 -  20b39fff        4096   commit  mapped    rw--
+ 20b3a000 -  20b8ffff      352256   commit  mapped    rw-c
+ 20b90000 -  20b90fff        4096   commit  mapped    rw--
+ 20b91000 -  20cbffff     1241088   commit  mapped    rw-c
+ 20cc0000 -  20cc1fff        8192   commit  mapped    rw--
+ 20cc2000 -  20d0ffff      319488   commit  mapped    rw-c
+ 20d10000 -  20d10fff        4096   commit  mapped    rw--
+ 20d11000 -  20ec9fff     1806336   commit  mapped    rw-c
+ 20eca000 -  20ecafff        4096   commit  mapped    rw--
+ 20ecb000 -  20eccfff        8192   commit  mapped    rw-c
+ 20ecd000 -  20ecffff       12288   commit  mapped    rw--
+ 20ed0000 -  20f0ffff      262144   commit private    rwx-
+ 20f10000 -  20f10fff        4096   commit  mapped    rw--
+ 20f11000 -  20f1afff       40960   commit  mapped    rw-c
+ 20f1b000 -  20f1ffff       20480   commit  mapped    rw--
+ 20f20000 -  20f47fff      163840   commit  mapped    rw-c
+ 20f48000 -  20f48fff        4096   commit  mapped    rw--
+ 20f49000 -  20fdbfff      602112   commit  mapped    rw-c
+ 20fdc000 -  20fdcfff        4096   commit  mapped    rw--
+ 20fdd000 -  20fdefff        8192   commit  mapped    rw-c
+ 20fdf000 -  20fdffff        4096   commit  mapped    rw--
+ 20fe0000 -  20ffafff      110592   commit  mapped    rw-c
+ 20ffb000 -  20ffbfff        4096   commit  mapped    rw--
+ 20ffc000 -  21016fff      110592   commit  mapped    rw-c
+ 21017000 -  21017fff        4096   commit  mapped    rw--
+ 21018000 -  21023fff       49152   commit  mapped    rw-c
+ 21024000 -  21024fff        4096   commit  mapped    rw--
+ 21025000 -  21038fff       81920   commit  mapped    rw-c
+ 21039000 -  21039fff        4096   commit  mapped    rw--
+ 2103a000 -  2103ffff       24576   commit  mapped    rw-c
+ 21040000 -  21040fff        4096   commit  mapped    rw--
+ 21041000 -  21043fff       12288   commit  mapped    rw-c
+ 21044000 -  21044fff        4096   commit  mapped    rw--
+ 21045000 -  21053fff       61440   commit  mapped    rw-c
+ 21054000 -  21054fff        4096   commit  mapped    rw--
+ 21055000 -  21077fff      143360   commit  mapped    rw-c
+ 21078000 -  21078fff        4096   commit  mapped    rw--
+ 21079000 -  2108ffff       94208   commit  mapped    rw-c
+ 21090000 -  21090fff        4096   commit  mapped    rw--
+ 21091000 -  21091fff        4096   commit  mapped    rw-c
+ 21092000 -  21092fff        4096   commit  mapped    rw--
+ 21093000 -  210a1fff       61440   commit  mapped    rw-c
+ 210a2000 -  210a2fff        4096   commit  mapped    rw--
+ 210a3000 -  210cffff      184320   commit  mapped    rw-c
+ 210d0000 -  210d0fff        4096   commit  mapped    rw--
+ 210d1000 -  21124fff      344064   commit  mapped    rw-c
+ 21125000 -  2112efff       40960   commit  mapped    rw--
+ 2112f000 -  2113bfff       53248   commit  mapped    rw-c
+ 2113c000 -  2113cfff        4096   commit  mapped    rw--
+ 2113d000 -  2113ffff       12288   commit  mapped    rw-c
+ 21140000 -  21140fff        4096   commit  mapped    rw--
+ 21141000 -  2114dfff       53248   commit  mapped    rw-c
+ 2114e000 -  21150fff       12288   commit  mapped    rw--
+ 21151000 -  21159fff       36864   commit  mapped    rw-c
+ 2115a000 -  2115afff        4096   commit  mapped    rw--
+ 2115b000 -  21163fff       36864   commit  mapped    rw-c
+ 21164000 -  21164fff        4096   commit  mapped    rw--
+ 21165000 -  21166fff        8192   commit  mapped    rw-c
+ 21167000 -  21169fff       12288   commit  mapped    rw--
+ 2116a000 -  2116bfff        8192   commit  mapped    rw-c
+ 2116c000 -  2116cfff        4096   commit  mapped    rw--
+ 2116d000 -  21185fff      102400   commit  mapped    rw-c
+ 21186000 -  21186fff        4096   commit  mapped    rw--
+ 21187000 -  211cefff      294912   commit  mapped    rw-c
+ 211cf000 -  211d0fff        8192   commit  mapped    rw--
+ 211d1000 -  211f8fff      163840   commit  mapped    rw-c
+ 211f9000 -  211f9fff        4096   commit  mapped    rw--
+ 211fa000 -  212a0fff      684032   commit  mapped    rw-c
+ 212a1000 -  212a1fff        4096   commit  mapped    rw--
+ 212a2000 -  212a8fff       28672   commit  mapped    rw-c
+ 212a9000 -  212a9fff        4096   commit  mapped    rw--
+ 212aa000 -  212bcfff       77824   commit  mapped    rw-c
+ 212bd000 -  212bdfff        4096   commit  mapped    rw--
+ 212be000 -  212cdfff       65536   commit  mapped    rw-c
+ 212ce000 -  212d0fff       12288   commit  mapped    rw--
+ 212d1000 -  212f2fff      139264   commit  mapped    rw-c
+ 212f3000 -  212f4fff        8192   commit  mapped    rw--
+ 212f5000 -  2130efff      106496   commit  mapped    rw-c
+ 2130f000 -  21310fff        8192   commit  mapped    rw--
+ 21311000 -  2133bfff      176128   commit  mapped    rw-c
+ 2133c000 -  2133dfff        8192   commit  mapped    rw--
+ 2133e000 -  213f1fff      737280   commit  mapped    rw-c
+ 213f2000 -  213f2fff        4096   commit  mapped    rw--
+ 213f3000 -  213f5fff       12288   commit  mapped    rw-c
+ 213f6000 -  213f6fff        4096   commit  mapped    rw--
+ 213f7000 -  213fdfff       28672   commit  mapped    rw-c
+ 213fe000 -  213fefff        4096   commit  mapped    rw--
+ 213ff000 -  21423fff      151552   commit  mapped    rw-c
+ 21424000 -  21424fff        4096   commit  mapped    rw--
+ 21425000 -  21430fff       49152   commit  mapped    rw-c
+ 21431000 -  21431fff        4096   commit  mapped    rw--
+ 21432000 -  2144efff      118784   commit  mapped    rw-c
+ 2144f000 -  21450fff        8192   commit  mapped    rw--
+ 21451000 -  2145bfff       45056   commit  mapped    rw-c
+ 2145c000 -  2145cfff        4096   commit  mapped    rw--
+ 2145d000 -  2145ffff       12288   commit  mapped    rw-c
+ 21460000 -  21460fff        4096   commit  mapped    rw--
+ 21461000 -  2147dfff      118784   commit  mapped    rw-c
+ 2147e000 -  2147efff        4096   commit  mapped    rw--
+ 2147f000 -  21480fff        8192   commit  mapped    rw-c
+ 21481000 -  21481fff        4096   commit  mapped    rw--
+ 21482000 -  21485fff       16384   commit  mapped    rw-c
+ 21486000 -  21486fff        4096   commit  mapped    rw--
+ 21487000 -  21487fff        4096   commit  mapped    rw-c
+ 21488000 -  21488fff        4096   commit  mapped    rw--
+ 21489000 -  21489fff        4096   commit  mapped    rw-c
+ 2148a000 -  2148afff        4096   commit  mapped    rw--
+ 2148b000 -  2148bfff        4096   commit  mapped    rw-c
+ 2148c000 -  2148cfff        4096   commit  mapped    rw--
+ 2148d000 -  21490fff       16384   commit  mapped    rw-c
+ 21491000 -  21491fff        4096   commit  mapped    rw--
+ 21492000 -  21496fff       20480   commit  mapped    rw-c
+ 21497000 -  21497fff        4096   commit  mapped    rw--
+ 21498000 -  214bffff      163840   commit  mapped    rw-c
+ 214c0000 -  214c3fff       16384   commit  mapped    rw--
+ 214c4000 -  214c4fff        4096   commit  mapped    rw-c
+ 214c5000 -  214c9fff       20480   commit  mapped    rw--
+ 214ca000 -  214cbfff        8192   commit  mapped    rw-c
+ 214cc000 -  214cdfff        8192   commit  mapped    rw--
+ 214ce000 -  214cefff        4096   commit  mapped    rw-c
+ 214cf000 -  214d0fff        8192   commit  mapped    rw--
+ 214d1000 -  214e4fff       81920   commit  mapped    rw-c
+ 214e5000 -  214e5fff        4096   commit  mapped    rw--
+ 214e6000 -  215b0fff      831488   commit  mapped    rw-c
+ 215b1000 -  215b3fff       12288   commit  mapped    rw--
+ 215b4000 -  215cefff      110592   commit  mapped    rw-c
+ 215cf000 -  215d0fff        8192   commit  mapped    rw--
+ 215d1000 -  2160afff      237568   commit  mapped    rw-c
+ 2160b000 -  2160bfff        4096   commit  mapped    rw--
+ 2160c000 -  2160efff       12288   commit  mapped    rw-c
+ 2160f000 -  21621fff       77824   commit  mapped    rw--
+ 21622000 -  21650fff      192512   commit  mapped    rw-c
+ 21651000 -  21651fff        4096   commit  mapped    rw--
+ 21652000 -  21714fff      798720   commit  mapped    rw-c
+ 21715000 -  21716fff        8192   commit  mapped    rw--
+ 21717000 -  21734fff      122880   commit  mapped    rw-c
+ 21735000 -  21736fff        8192   commit  mapped    rw--
+ 21737000 -  2174bfff       86016   commit  mapped    rw-c
+ 2174c000 -  21750fff       20480   commit  mapped    rw--
+ 21751000 -  217acfff      376832   commit  mapped    rw-c
+ 217ad000 -  217b2fff       24576   commit  mapped    rw--
+ 217b3000 -  217b3fff        4096   commit  mapped    rw-c
+ 217b4000 -  217bffff       49152   commit  mapped    rw--
+ 217c0000 -  217cffff       65536   commit private    rwx-
+ 217d0000 -  217d0fff        4096   commit  mapped    rw--
+ 217d1000 -  21923fff     1388544   commit  mapped    rw-c
+ 21924000 -  21928fff       20480   commit  mapped    rw--
+ 21929000 -  2192afff        8192   commit  mapped    rw-c
+ 2192b000 -  2192bfff        4096   commit  mapped    rw--
+ 2192c000 -  2192cfff        4096   commit  mapped    rw-c
+ 2192d000 -  21930fff       16384   commit  mapped    rw--
+ 21931000 -  2194efff      122880   commit  mapped    rw-c
+ 2194f000 -  21950fff        8192   commit  mapped    rw--
+ 21951000 -  2196afff      106496   commit  mapped    rw-c
+ 2196b000 -  2196bfff        4096   commit  mapped    rw--
+ 2196c000 -  2197ffff       81920   commit  mapped    rw-c
+ 21980000 -  21980fff        4096   commit  mapped    rw--
+ 21981000 -  2198efff       57344   commit  mapped    rw-c
+ 2198f000 -  21991fff       12288   commit  mapped    rw--
+ 21992000 -  21a4dfff      770048   commit  mapped    rw-c
+ 21a4e000 -  21a4efff        4096   commit  mapped    rw--
+ 21a4f000 -  21a51fff       12288   commit  mapped    rw-c
+ 21a52000 -  21a56fff       20480   commit  mapped    rw--
+ 21a57000 -  21a58fff        8192   commit  mapped    rw-c
+ 21a59000 -  21a5ffff       28672   commit  mapped    rw--
+ 21a60000 -  21a60fff        4096   commit  mapped    rw-c
+ 21a61000 -  21a67fff       28672   commit  mapped    rw--
+ 21a68000 -  21a6bfff       16384   commit  mapped    rw-c
+ 21a6c000 -  21a6dfff        8192   commit  mapped    rw--
+ 21a6e000 -  21a75fff       32768   commit  mapped    rw-c
+ 21a76000 -  21a76fff        4096   commit  mapped    rw--
+ 21a77000 -  21a81fff       45056   commit  mapped    rw-c
+ 21a82000 -  21a83fff        8192   commit  mapped    rw--
+ 21a84000 -  21a85fff        8192   commit  mapped    rw-c
+ 21a86000 -  21a86fff        4096   commit  mapped    rw--
+ 21a87000 -  21a8afff       16384   commit  mapped    rw-c
+ 21a8b000 -  21a8bfff        4096   commit  mapped    rw--
+ 21a8c000 -  21a9ffff       81920   commit  mapped    rw-c
+ 21aa0000 -  21aa0fff        4096   commit  mapped    rw--
+ 21aa1000 -  21aa1fff        4096   commit  mapped    rw-c
+ 21aa2000 -  21aa3fff        8192   commit  mapped    rw--
+ 21aa4000 -  21abffff      114688   commit  mapped    rw-c
+ 21ac0000 -  21ac0fff        4096   commit  mapped    rw--
+ 21ac1000 -  21acefff       57344   commit  mapped    rw-c
+ 21acf000 -  21ad1fff       12288   commit  mapped    rw--
+ 21ad2000 -  21ad2fff        4096   commit  mapped    rw-c
+ 21ad3000 -  21ad3fff        4096   commit  mapped    rw--
+ 21ad4000 -  21ad4fff        4096   commit  mapped    rw-c
+ 21ad5000 -  21ad5fff        4096   commit  mapped    rw--
+ 21ad6000 -  21adafff       20480   commit  mapped    rw-c
+ 21adb000 -  21adbfff        4096   commit  mapped    rw--
+ 21adc000 -  21adefff       12288   commit  mapped    rw-c
+ 21adf000 -  21ae0fff        8192   commit  mapped    rw--
+ 21ae1000 -  21ae5fff       20480   commit  mapped    rw-c
+ 21ae6000 -  21ae6fff        4096   commit  mapped    rw--
+ 21ae7000 -  21ae9fff       12288   commit  mapped    rw-c
+ 21aea000 -  21aeafff        4096   commit  mapped    rw--
+ 21aeb000 -  21aecfff        8192   commit  mapped    rw-c
+ 21aed000 -  21aedfff        4096   commit  mapped    rw--
+ 21aee000 -  21af0fff       12288   commit  mapped    rw-c
+ 21af1000 -  21af1fff        4096   commit  mapped    rw--
+ 21af2000 -  21af2fff        4096   commit  mapped    rw-c
+ 21af3000 -  21af3fff        4096   commit  mapped    rw--
+ 21af4000 -  21af4fff        4096   commit  mapped    rw-c
+ 21af5000 -  21af5fff        4096   commit  mapped    rw--
+ 21af6000 -  21af6fff        4096   commit  mapped    rw-c
+ 21af7000 -  21afbfff       20480   commit  mapped    rw--
+ 21afc000 -  21afcfff        4096   commit  mapped    rw-c
+ 21afd000 -  21afdfff        4096   commit  mapped    rw--
+ 21afe000 -  21afffff        8192   commit  mapped    rw-c
+ 21b00000 -  21b00fff        4096   commit  mapped    rw--
+ 21b01000 -  21b09fff       36864   commit  mapped    rw-c
+ 21b0a000 -  21b0afff        4096   commit  mapped    rw--
+ 21b0b000 -  21b13fff       36864   commit  mapped    rw-c
+ 21b14000 -  21b14fff        4096   commit  mapped    rw--
+ 21b15000 -  21b18fff       16384   commit  mapped    rw-c
+ 21b19000 -  21b19fff        4096   commit  mapped    rw--
+ 21b1a000 -  21b22fff       36864   commit  mapped    rw-c
+ 21b23000 -  21b23fff        4096   commit  mapped    rw--
+ 21b24000 -  21b2dfff       40960   commit  mapped    rw-c
+ 21b2e000 -  21b31fff       16384   commit  mapped    rw--
+ 21b32000 -  21b43fff       73728   commit  mapped    rw-c
+ 21b44000 -  21b45fff        8192   commit  mapped    rw--
+ 21b46000 -  21b4afff       20480   commit  mapped    rw-c
+ 21b4b000 -  21b4cfff        8192   commit  mapped    rw--
+ 21b4d000 -  21b63fff       94208   commit  mapped    rw-c
+ 21b64000 -  21b64fff        4096   commit  mapped    rw--
+ 21b65000 -  21b6ffff       45056   commit  mapped    rw-c
+ 21b70000 -  21b70fff        4096   commit  mapped    rw--
+ 21b71000 -  21bc1fff      331776   commit  mapped    rw-c
+ 21bc2000 -  21bc2fff        4096   commit  mapped    rw--
+ 21bc3000 -  21bd6fff       81920   commit  mapped    rw-c
+ 21bd7000 -  21bd7fff        4096   commit  mapped    rw--
+ 21bd8000 -  21c0ffff      229376   commit  mapped    rw-c
+ 21c10000 -  21c10fff        4096   commit  mapped    rw--
+ 21c11000 -  21c11fff        4096   commit  mapped    rw-c
+ 21c12000 -  21c17fff       24576   commit  mapped    rw--
+ 21c18000 -  21c23fff       49152   commit  mapped    rw-c
+ 21c24000 -  21c24fff        4096   commit  mapped    rw--
+ 21c25000 -  21c8ffff      438272   commit  mapped    rw-c
+ 21c90000 -  21c93fff       16384   commit  mapped    rw--
+ 21c94000 -  21ca1fff       57344   commit  mapped    rw-c
+ 21ca2000 -  21ca2fff        4096   commit  mapped    rw--
+ 21ca3000 -  21cbcfff      106496   commit  mapped    rw-c
+ 21cbd000 -  21cbdfff        4096   commit  mapped    rw--
+ 21cbe000 -  21cd9fff      114688   commit  mapped    rw-c
+ 21cda000 -  21cdffff       24576   commit  mapped    rw--
+ 21ce0000 -  21e2ffff     1376256   commit private    rwx-
+ 21e30000 -  21e3ffff       65536   commit  mapped    rw--
+ 21e40000 -  21e7ffff      262144   commit private    rwx-
+ 21e80000 -  21e8ffff       65536   commit  mapped    rw--
+ 21e90000 -  237cffff    26476544   commit private    rwx-
+ 237d0000 -  237fffff      196608  reserve private        
+ 23800000 -  23800fff        4096   commit   image    r---  C:\Users\ADMINI~1\AppData\Local\Temp\dateinj01.dll
+ 23801000 -  23801fff        4096   commit   image    r-x-  C:\Users\ADMINI~1\AppData\Local\Temp\dateinj01.dll
+ 23802000 -  23802fff        4096   commit   image    r---  C:\Users\ADMINI~1\AppData\Local\Temp\dateinj01.dll
+ 23803000 -  23803fff        4096   commit   image    rw--  C:\Users\ADMINI~1\AppData\Local\Temp\dateinj01.dll
+ 23804000 -  23804fff        4096   commit   image    r---  C:\Users\ADMINI~1\AppData\Local\Temp\dateinj01.dll
+ 23805000 -  2380ffff       45056     free            ----
+ 23810000 -  2480cfff    16764928  reserve private        
+ 2480d000 -  2480efff        8192   commit private    rw-- (guard)
+ 2480f000 -  2480ffff        4096   commit private    rw--
+ 24810000 -  2580cfff    16764928  reserve private        
+ 2580d000 -  2580efff        8192   commit private    rw-- (guard)
+ 2580f000 -  2580ffff        4096   commit private    rw--
+ 25810000 -  2680cfff    16764928  reserve private        
+ 2680d000 -  2680efff        8192   commit private    rw-- (guard)
+ 2680f000 -  2680ffff        4096   commit private    rw--
+ 26810000 -  2780cfff    16764928  reserve private        
+ 2780d000 -  2780efff        8192   commit private    rw-- (guard)
+ 2780f000 -  2780ffff        4096   commit private    rw--
+ 27810000 -  2880cfff    16764928  reserve private        
+ 2880d000 -  2880efff        8192   commit private    rw-- (guard)
+ 2880f000 -  2880ffff        4096   commit private    rw--
+ 28810000 -  2980cfff    16764928  reserve private        
+ 2980d000 -  2980efff        8192   commit private    rw-- (guard)
+ 2980f000 -  2980ffff        4096   commit private    rw--
+ 29810000 -  2a80cfff    16764928  reserve private        
+ 2a80d000 -  2a80efff        8192   commit private    rw-- (guard)
+ 2a80f000 -  2a80ffff        4096   commit private    rw--
+ 2a810000 -  2b80cfff    16764928  reserve private        
+ 2b80d000 -  2b80efff        8192   commit private    rw-- (guard)
+ 2b80f000 -  2b80ffff        4096   commit private    rw--
+ 2b810000 -  53ffffff   679411712     free            ----
+ 54000000 -  54006fff       28672   commit  mapped    rw--
+ 54007000 -  54054fff      319488   commit  mapped    rw-c
+ 54055000 -  54055fff        4096   commit  mapped    rw--
+ 54056000 -  54095fff      262144   commit  mapped    rw-c
+ 54096000 -  54096fff        4096   commit  mapped    rw--
+ 54097000 -  54097fff        4096   commit  mapped    rw-c
+ 54098000 -  5409ffff       32768   commit  mapped    rw--
+ 540a0000 -  540cffff      196608   commit private    rwx-
+ 540d0000 -  54ffffff    15925248  reserve private        
+ 55000000 -  6384ffff   243597312     free            ----
+ 63850000 -  63850fff        4096   commit   image    r---  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 63851000 -  638aafff      368640   commit   image    r-x-  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638ab000 -  638aefff       16384   commit   image    r---  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638af000 -  638affff        4096   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638b0000 -  638b1fff        8192   commit   image    rw-c  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638b2000 -  638b4fff       12288   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638b5000 -  638b6fff        8192   commit   image    rw-c  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638b7000 -  638b7fff        4096   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638b8000 -  638b8fff        4096   commit   image    rw-c  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638b9000 -  638bafff        8192   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638bb000 -  638bdfff       12288   commit   image    rw-c  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638be000 -  638c2fff       20480   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638c3000 -  638c5fff       12288   commit   image    rw-c  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638c6000 -  638c6fff        4096   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638c7000 -  638c9fff       12288   commit   image    rw-c  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638ca000 -  638cbfff        8192   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638cc000 -  638d3fff       32768   commit   image    rw-c  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638d4000 -  638d5fff        8192   commit   image    rw--  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638d6000 -  638d6fff        4096   commit   image    rw-c  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638d7000 -  638e9fff       77824   commit   image    r---  C:\Users\Administrator\Desktop\VisualPCD-20130110\kb\RacerPro-1-9-2-beta\acli817.dll
+ 638ea000 -  6556ffff    29908992     free            ----
+ 65570000 -  65570fff        4096   commit   image    r---  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 65571000 -  65642fff      860160   commit   image    r-x-  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 65643000 -  65667fff      151552   commit   image    r---  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 65668000 -  6566afff       12288   commit   image    rw--  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 6566b000 -  6566cfff        8192   commit   image    rw-c  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 6566d000 -  6566efff        8192   commit   image    rw--  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 6566f000 -  65670fff        8192   commit   image    rw-c  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 65671000 -  65688fff       98304   commit   image    rw--  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 65689000 -  65689fff        4096   commit   image    rw-c  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 6568a000 -  6569efff       86016   commit   image    r---  C:\Program Files\360\360Safe\safemon\safemon.dll
+ 6569f000 -  7107ffff   194908160     free            ----
+ 71080000 -  71080fff        4096   commit   image    r---  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_ec83dffa859149af\COMCTL32.dll
+ 71081000 -  710f5fff      479232   commit   image    r-x-  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_ec83dffa859149af\COMCTL32.dll
+ 710f6000 -  710f7fff        8192   commit   image    rw--  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_ec83dffa859149af\COMCTL32.dll
+ 710f8000 -  710f8fff        4096   commit   image    rw-c  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_ec83dffa859149af\COMCTL32.dll
+ 710f9000 -  71103fff       45056   commit   image    r---  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_ec83dffa859149af\COMCTL32.dll
+ 71104000 -  7281ffff    24231936     free            ----
+ 72820000 -  72820fff        4096   commit   image    r---  C:\Windows\system32\dhcpcsvc.DLL
+ 72821000 -  7282efff       57344   commit   image    r-x-  C:\Windows\system32\dhcpcsvc.DLL
+ 7282f000 -  7282ffff        4096   commit   image    rw--  C:\Windows\system32\dhcpcsvc.DLL
+ 72830000 -  72831fff        8192   commit   image    r---  C:\Windows\system32\dhcpcsvc.DLL
+ 72832000 -  7283ffff       57344     free            ----
+ 72840000 -  72840fff        4096   commit   image    r---  C:\Windows\system32\dhcpcsvc6.DLL
+ 72841000 -  72845fff       20480   commit   image    r-x-  C:\Windows\system32\dhcpcsvc6.DLL
+ 72846000 -  72846fff        4096   commit   image    rw--  C:\Windows\system32\dhcpcsvc6.DLL
+ 72847000 -  7284cfff       24576   commit   image    r---  C:\Windows\system32\dhcpcsvc6.DLL
+ 7284d000 -  728dffff      602112     free            ----
+ 728e0000 -  728e0fff        4096   commit   image    r---  C:\Windows\system32\iphlpapi.dll
+ 728e1000 -  728f8fff       98304   commit   image    r-x-  C:\Windows\system32\iphlpapi.dll
+ 728f9000 -  728f9fff        4096   commit   image    rw--  C:\Windows\system32\iphlpapi.dll
+ 728fa000 -  728fbfff        8192   commit   image    r---  C:\Windows\system32\iphlpapi.dll
+ 728fc000 -  728fffff       16384     free            ----
+ 72900000 -  72900fff        4096   commit   image    r---  C:\Windows\system32\WINNSI.DLL
+ 72901000 -  72903fff       12288   commit   image    r-x-  C:\Windows\system32\WINNSI.DLL
+ 72904000 -  72904fff        4096   commit   image    rw--  C:\Windows\system32\WINNSI.DLL
+ 72905000 -  72906fff        8192   commit   image    r---  C:\Windows\system32\WINNSI.DLL
+ 72907000 -  73f1ffff    23171072     free            ----
+ 73f20000 -  73f20fff        4096   commit   image    r---  C:\Windows\system32\uxtheme.dll
+ 73f21000 -  73f59fff      233472   commit   image    r-x-  C:\Windows\system32\uxtheme.dll
+ 73f5a000 -  73f5afff        4096   commit   image    rw--  C:\Windows\system32\uxtheme.dll
+ 73f5b000 -  73f5bfff        4096   commit   image    rw-c  C:\Windows\system32\uxtheme.dll
+ 73f5c000 -  73f5ffff       16384   commit   image    r---  C:\Windows\system32\uxtheme.dll
+ 73f60000 -  7409ffff     1310720     free            ----
+ 740a0000 -  740a0fff        4096   commit   image    r---  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.DLL
+ 740a1000 -  741ebfff     1355776   commit   image    r-x-  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.DLL
+ 741ec000 -  741edfff        8192   commit   image    rw--  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.DLL
+ 741ee000 -  741eefff        4096   commit   image    rw-c  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.DLL
+ 741ef000 -  7423dfff      323584   commit   image    r---  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.DLL
+ 7423e000 -  7457ffff     3416064     free            ----
+ 74580000 -  74580fff        4096   commit   image    r---  C:\Windows\System32\wshtcpip.dll
+ 74581000 -  74581fff        4096   commit   image    r-x-  C:\Windows\System32\wshtcpip.dll
+ 74582000 -  74582fff        4096   commit   image    rw--  C:\Windows\System32\wshtcpip.dll
+ 74583000 -  74584fff        8192   commit   image    r---  C:\Windows\System32\wshtcpip.dll
+ 74585000 -  7468ffff     1093632     free            ----
+ 74690000 -  74690fff        4096   commit   image    r---  C:\Windows\system32\VERSION.dll
+ 74691000 -  74695fff       20480   commit   image    r-x-  C:\Windows\system32\VERSION.dll
+ 74696000 -  74696fff        4096   commit   image    rw--  C:\Windows\system32\VERSION.dll
+ 74697000 -  74698fff        8192   commit   image    r---  C:\Windows\system32\VERSION.dll
+ 74699000 -  7499ffff     3174400     free            ----
+ 749a0000 -  749a0fff        4096   commit   image    r---  C:\Windows\system32\DNSAPI.dll
+ 749a1000 -  749d8fff      229376   commit   image    r-x-  C:\Windows\system32\DNSAPI.dll
+ 749d9000 -  749dafff        8192   commit   image    rw--  C:\Windows\system32\DNSAPI.dll
+ 749db000 -  749dbfff        4096   commit   image    rw-c  C:\Windows\system32\DNSAPI.dll
+ 749dc000 -  749e3fff       32768   commit   image    r---  C:\Windows\system32\DNSAPI.dll
+ 749e4000 -  74acffff      966656     free            ----
+ 74ad0000 -  74ad0fff        4096   commit   image    r---  C:\Windows\system32\mswsock.dll
+ 74ad1000 -  74b05fff      217088   commit   image    r-x-  C:\Windows\system32\mswsock.dll
+ 74b06000 -  74b06fff        4096   commit   image    rw--  C:\Windows\system32\mswsock.dll
+ 74b07000 -  74b07fff        4096   commit   image    rw-c  C:\Windows\system32\mswsock.dll
+ 74b08000 -  74b0bfff       16384   commit   image    r---  C:\Windows\system32\mswsock.dll
+ 74b0c000 -  74feffff     5128192     free            ----
+ 74ff0000 -  74ff0fff        4096   commit   image    r---  C:\Windows\system32\CRYPTBASE.dll
+ 74ff1000 -  74ff8fff       32768   commit   image    r-x-  C:\Windows\system32\CRYPTBASE.dll
+ 74ff9000 -  74ff9fff        4096   commit   image    rw--  C:\Windows\system32\CRYPTBASE.dll
+ 74ffa000 -  74ffbfff        8192   commit   image    r---  C:\Windows\system32\CRYPTBASE.dll
+ 74ffc000 -  7514ffff     1392640     free            ----
+ 75150000 -  75150fff        4096   commit   image    r---  C:\Windows\system32\KERNELBASE.dll
+ 75151000 -  75194fff      278528   commit   image    r-x-  C:\Windows\system32\KERNELBASE.dll
+ 75195000 -  75196fff        8192   commit   image    rw--  C:\Windows\system32\KERNELBASE.dll
+ 75197000 -  7519afff       16384   commit   image    r---  C:\Windows\system32\KERNELBASE.dll
+ 7519b000 -  7528ffff     1003520     free            ----
+ 75290000 -  75290fff        4096   commit   image    r---  C:\Windows\system32\WINMM.dll
+ 75291000 -  752b7fff      159744   commit   image    r-x-  C:\Windows\system32\WINMM.dll
+ 752b8000 -  752b9fff        8192   commit   image    rw--  C:\Windows\system32\WINMM.dll
+ 752ba000 -  752bafff        4096   commit   image    rw-c  C:\Windows\system32\WINMM.dll
+ 752bb000 -  752c1fff       28672   commit   image    r---  C:\Windows\system32\WINMM.dll
+ 752c2000 -  752cffff       57344     free            ----
+ 752d0000 -  752d0fff        4096   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-user32-l1-1-0.dll
+ 752d1000 -  752d1fff        4096   commit   image    r-x-  C:\Windows\system32\api-ms-win-downlevel-user32-l1-1-0.dll
+ 752d2000 -  752d3fff        8192   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-user32-l1-1-0.dll
+ 752d4000 -  752effff      114688     free            ----
+ 752f0000 -  752f0fff        4096   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-version-l1-1-0.dll
+ 752f1000 -  752f1fff        4096   commit   image    r-x-  C:\Windows\system32\api-ms-win-downlevel-version-l1-1-0.dll
+ 752f2000 -  752f3fff        8192   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-version-l1-1-0.dll
+ 752f4000 -  752fffff       49152     free            ----
+ 75300000 -  75300fff        4096   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-advapi32-l1-1-0.dll
+ 75301000 -  75303fff       12288   commit   image    r-x-  C:\Windows\system32\api-ms-win-downlevel-advapi32-l1-1-0.dll
+ 75304000 -  75304fff        4096   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-advapi32-l1-1-0.dll
+ 75305000 -  7533ffff      241664     free            ----
+ 75340000 -  75340fff        4096   commit   image    r---  C:\Windows\system32\dwmapi.dll
+ 75341000 -  7534bfff       45056   commit   image    r-x-  C:\Windows\system32\dwmapi.dll
+ 7534c000 -  7534dfff        8192   commit   image    rw--  C:\Windows\system32\dwmapi.dll
+ 7534e000 -  75352fff       20480   commit   image    r---  C:\Windows\system32\dwmapi.dll
+ 75353000 -  7535ffff       53248     free            ----
+ 75360000 -  75360fff        4096   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-normaliz-l1-1-0.dll
+ 75361000 -  75361fff        4096   commit   image    r-x-  C:\Windows\system32\api-ms-win-downlevel-normaliz-l1-1-0.dll
+ 75362000 -  75362fff        4096   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-normaliz-l1-1-0.dll
+ 75363000 -  7536ffff       53248     free            ----
+ 75370000 -  75370fff        4096   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-shlwapi-l1-1-0.dll
+ 75371000 -  75372fff        8192   commit   image    r-x-  C:\Windows\system32\api-ms-win-downlevel-shlwapi-l1-1-0.dll
+ 75373000 -  75373fff        4096   commit   image    r---  C:\Windows\system32\api-ms-win-downlevel-shlwapi-l1-1-0.dll
+ 75374000 -  7549ffff     1228800     free            ----
+ 754a0000 -  754a0fff        4096   commit   image    r---  C:\Windows\system32\MSCTF.dll
+ 754a1000 -  75523fff      536576   commit   image    r-x-  C:\Windows\system32\MSCTF.dll
+ 75524000 -  75525fff        8192   commit   image    rw--  C:\Windows\system32\MSCTF.dll
+ 75526000 -  7556bfff      286720   commit   image    r---  C:\Windows\system32\MSCTF.dll
+ 7556c000 -  755bffff      344064     free            ----
+ 755c0000 -  755c2fff       12288   commit   image    r---  C:\Windows\system32\normaliz.DLL
+ 755c3000 -  755fffff      249856     free            ----
+ 75600000 -  75600fff        4096   commit   image    r---  C:\Windows\system32\comdlg32.dll
+ 75601000 -  75656fff      352256   commit   image    r-x-  C:\Windows\system32\comdlg32.dll
+ 75657000 -  75657fff        4096   commit   image    rw--  C:\Windows\system32\comdlg32.dll
+ 75658000 -  7565afff       12288   commit   image    rw-c  C:\Windows\system32\comdlg32.dll
+ 7565b000 -  7567afff      131072   commit   image    r---  C:\Windows\system32\comdlg32.dll
+ 7567b000 -  7567ffff       20480     free            ----
+ 75680000 -  75680fff        4096   commit   image    r---  C:\Windows\system32\WS2_32.dll
+ 75681000 -  756a6fff      155648   commit   image    r-x-  C:\Windows\system32\WS2_32.dll
+ 756a7000 -  756a7fff        4096   commit   image    rw--  C:\Windows\system32\WS2_32.dll
+ 756a8000 -  756b4fff       53248   commit   image    r---  C:\Windows\system32\WS2_32.dll
+ 756b5000 -  756bffff       45056     free            ----
+ 756c0000 -  756c0fff        4096   commit   image    r---  C:\Windows\system32\USP10.dll
+ 756c1000 -  7571bfff      372736   commit   image    r-x-  C:\Windows\system32\USP10.dll
+ 7571c000 -  7571dfff        8192   commit   image    rw--  C:\Windows\system32\USP10.dll
+ 7571e000 -  7575cfff      258048   commit   image    r---  C:\Windows\system32\USP10.dll
+ 7575d000 -  7575ffff       12288     free            ----
+ 75760000 -  75760fff        4096   commit   image    r---  C:\Windows\system32\USER32.dll
+ 75761000 -  757c8fff      425984   commit   image    r-x-  C:\Windows\system32\USER32.dll
+ 757c9000 -  757c9fff        4096   commit   image    rw--  C:\Windows\system32\USER32.dll
+ 757ca000 -  75828fff      389120   commit   image    r---  C:\Windows\system32\USER32.dll
+ 75829000 -  7588ffff      421888     free            ----
+ 75890000 -  75890fff        4096   commit   image    r---  C:\Windows\system32\WININET.dll
+ 75891000 -  759fcfff     1490944   commit   image    r-x-  C:\Windows\system32\WININET.dll
+ 759fd000 -  759fefff        8192   commit   image    rw--  C:\Windows\system32\WININET.dll
+ 759ff000 -  75a05fff       28672   commit   image    rw-c  C:\Windows\system32\WININET.dll
+ 75a06000 -  75a06fff        4096   commit   image    rw--  C:\Windows\system32\WININET.dll
+ 75a07000 -  75a08fff        8192   commit   image    rw-c  C:\Windows\system32\WININET.dll
+ 75a09000 -  75a48fff      262144   commit   image    r---  C:\Windows\system32\WININET.dll
+ 75a49000 -  75a4ffff       28672     free            ----
+ 75a50000 -  75a50fff        4096   commit   image    r---  C:\Windows\system32\IMM32.DLL
+ 75a51000 -  75a67fff       94208   commit   image    r-x-  C:\Windows\system32\IMM32.DLL
+ 75a68000 -  75a68fff        4096   commit   image    rw--  C:\Windows\system32\IMM32.DLL
+ 75a69000 -  75a6efff       24576   commit   image    r---  C:\Windows\system32\IMM32.DLL
+ 75a6f000 -  75a6ffff        4096     free            ----
+ 75a70000 -  75a70fff        4096   commit   image    r---  C:\Windows\system32\GDI32.dll
+ 75a71000 -  75ab8fff      294912   commit   image    r-x-  C:\Windows\system32\GDI32.dll
+ 75ab9000 -  75ab9fff        4096   commit   image    rw--  C:\Windows\system32\GDI32.dll
+ 75aba000 -  75abafff        4096   commit   image    rw-c  C:\Windows\system32\GDI32.dll
+ 75abb000 -  75abdfff       12288   commit   image    r---  C:\Windows\system32\GDI32.dll
+ 75abe000 -  75abffff        8192     free            ----
+ 75ac0000 -  75ac0fff        4096   commit   image    r---  C:\Windows\system32\PSAPI.DLL
+ 75ac1000 -  75ac1fff        4096   commit   image    r-x-  C:\Windows\system32\PSAPI.DLL
+ 75ac2000 -  75ac2fff        4096   commit   image    rw--  C:\Windows\system32\PSAPI.DLL
+ 75ac3000 -  75ac4fff        8192   commit   image    r---  C:\Windows\system32\PSAPI.DLL
+ 75ac5000 -  75bfffff     1290240     free            ----
+ 75c00000 -  75c00fff        4096   commit   image    r---  C:\Windows\system32\ole32.dll
+ 75c01000 -  75d45fff     1331200   commit   image    r-x-  C:\Windows\system32\ole32.dll
+ 75d46000 -  75d49fff       16384   commit   image    rw--  C:\Windows\system32\ole32.dll
+ 75d4a000 -  75d5bfff       73728   commit   image    r---  C:\Windows\system32\ole32.dll
+ 75d5c000 -  7600ffff     2834432     free            ----
+ 76010000 -  76010fff        4096   commit   image    r---  C:\Windows\system32\SHLWAPI.dll
+ 76011000 -  76061fff      331776   commit   image    r-x-  C:\Windows\system32\SHLWAPI.dll
+ 76062000 -  76062fff        4096   commit   image    rw--  C:\Windows\system32\SHLWAPI.dll
+ 76063000 -  76066fff       16384   commit   image    r---  C:\Windows\system32\SHLWAPI.dll
+ 76067000 -  7606ffff       36864     free            ----
+ 76070000 -  76070fff        4096   commit   image    r---  C:\Windows\system32\OLEAUT32.dll
+ 76071000 -  760f5fff      544768   commit   image    r-x-  C:\Windows\system32\OLEAUT32.dll
+ 760f6000 -  760f7fff        8192   commit   image    rw--  C:\Windows\system32\OLEAUT32.dll
+ 760f8000 -  760fefff       28672   commit   image    r---  C:\Windows\system32\OLEAUT32.dll
+ 760ff000 -  760fffff        4096     free            ----
+ 76100000 -  76100fff        4096   commit   image    r---  C:\Windows\system32\ADVAPI32.dll
+ 76101000 -  76172fff      466944   commit   image    r-x-  C:\Windows\system32\ADVAPI32.dll
+ 76173000 -  76173fff        4096   commit   image    rw--  C:\Windows\system32\ADVAPI32.dll
+ 76174000 -  76176fff       12288   commit   image    rw-c  C:\Windows\system32\ADVAPI32.dll
+ 76177000 -  7619ffff      167936   commit   image    r---  C:\Windows\system32\ADVAPI32.dll
+ 761a0000 -  761a0fff        4096   commit   image    r---  C:\Windows\system32\kernel32.dll
+ 761a1000 -  76265fff      806912   commit   image    r-x-  C:\Windows\system32\kernel32.dll
+ 76266000 -  76266fff        4096   commit   image    rw--  C:\Windows\system32\kernel32.dll
+ 76267000 -  76273fff       53248   commit   image    r---  C:\Windows\system32\kernel32.dll
+ 76274000 -  7627ffff       49152     free            ----
+ 76280000 -  76280fff        4096   commit   image    r---  C:\Windows\system32\SHELL32.dll
+ 76281000 -  76649fff     3969024   commit   image    r-x-  C:\Windows\system32\SHELL32.dll
+ 7664a000 -  7664dfff       16384   commit   image    rw--  C:\Windows\system32\SHELL32.dll
+ 7664e000 -  76650fff       12288   commit   image    rw-c  C:\Windows\system32\SHELL32.dll
+ 76651000 -  76ec9fff     8884224   commit   image    r---  C:\Windows\system32\SHELL32.dll
+ 76eca000 -  770fffff     2318336     free            ----
+ 77100000 -  77100fff        4096   commit   image    r---  C:\Windows\system32\iertutil.dll
+ 77101000 -  772d2fff     1908736   commit   image    r-x-  C:\Windows\system32\iertutil.dll
+ 772d3000 -  772d6fff       16384   commit   image    rw--  C:\Windows\system32\iertutil.dll
+ 772d7000 -  772d8fff        8192   commit   image    rw-c  C:\Windows\system32\iertutil.dll
+ 772d9000 -  772d9fff        4096   commit   image    rw--  C:\Windows\system32\iertutil.dll
+ 772da000 -  772dafff        4096   commit   image    rw-c  C:\Windows\system32\iertutil.dll
+ 772db000 -  772fffff      151552   commit   image    r---  C:\Windows\system32\iertutil.dll
+ 77300000 -  77300fff        4096   commit   image    r---  C:\Windows\system32\RPCRT4.dll
+ 77301000 -  77396fff      614400   commit   image    r-x-  C:\Windows\system32\RPCRT4.dll
+ 77397000 -  77397fff        4096   commit   image    rw--  C:\Windows\system32\RPCRT4.dll
+ 77398000 -  773a0fff       36864   commit   image    r---  C:\Windows\system32\RPCRT4.dll
+ 773a1000 -  773affff       61440     free            ----
+ 773b0000 -  773b0fff        4096   commit   image    r---  C:\Windows\SYSTEM32\ntdll.dll
+ 773b1000 -  77486fff      876544   commit   image    r-x-  C:\Windows\SYSTEM32\ntdll.dll
+ 77487000 -  77487fff        4096   commit   image    rw--  C:\Windows\SYSTEM32\ntdll.dll
+ 77488000 -  77488fff        4096   commit   image    rw-c  C:\Windows\SYSTEM32\ntdll.dll
+ 77489000 -  7748afff        8192   commit   image    rw--  C:\Windows\SYSTEM32\ntdll.dll
+ 7748b000 -  7748bfff        4096   commit   image    rw-c  C:\Windows\SYSTEM32\ntdll.dll
+ 7748c000 -  7748dfff        8192   commit   image    rw--  C:\Windows\SYSTEM32\ntdll.dll
+ 7748e000 -  7748ffff        8192   commit   image    rw-c  C:\Windows\SYSTEM32\ntdll.dll
+ 77490000 -  774ebfff      376832   commit   image    r---  C:\Windows\SYSTEM32\ntdll.dll
+ 774ec000 -  774effff       16384     free            ----
+ 774f0000 -  774f0fff        4096   commit   image    r---  C:\Windows\system32\NSI.dll
+ 774f1000 -  774f2fff        8192   commit   image    r-x-  C:\Windows\system32\NSI.dll
+ 774f3000 -  774f3fff        4096   commit   image    rw--  C:\Windows\system32\NSI.dll
+ 774f4000 -  774f5fff        8192   commit   image    r---  C:\Windows\system32\NSI.dll
+ 774f6000 -  774fffff       40960     free            ----
+ 77500000 -  77500fff        4096   commit   image    r---  C:\Windows\SYSTEM32\sechost.dll
+ 77501000 -  77513fff       77824   commit   image    r-x-  C:\Windows\SYSTEM32\sechost.dll
+ 77514000 -  77514fff        4096   commit   image    rw--  C:\Windows\SYSTEM32\sechost.dll
+ 77515000 -  77516fff        8192   commit   image    rw-c  C:\Windows\SYSTEM32\sechost.dll
+ 77517000 -  77518fff        8192   commit   image    r---  C:\Windows\SYSTEM32\sechost.dll
+ 77519000 -  7751ffff       28672     free            ----
+ 77520000 -  77520fff        4096   commit   image    r---  C:\Windows\system32\LPK.dll
+ 77521000 -  77526fff       24576   commit   image    r-x-  C:\Windows\system32\LPK.dll
+ 77527000 -  77527fff        4096   commit   image    rw--  C:\Windows\system32\LPK.dll
+ 77528000 -  77529fff        8192   commit   image    r---  C:\Windows\system32\LPK.dll
+ 7752a000 -  7752ffff       24576     free            ----
+ 77530000 -  77530fff        4096   commit   image    r---  C:\Windows\system32\msvcrt.dll
+ 77531000 -  775cffff      651264   commit   image    r-x-  C:\Windows\system32\msvcrt.dll
+ 775d0000 -  775d0fff        4096   commit   image    rw--  C:\Windows\system32\msvcrt.dll
+ 775d1000 -  775d1fff        4096   commit   image    rw-c  C:\Windows\system32\msvcrt.dll
+ 775d2000 -  775d3fff        8192   commit   image    rw--  C:\Windows\system32\msvcrt.dll
+ 775d4000 -  775d6fff       12288   commit   image    rw-c  C:\Windows\system32\msvcrt.dll
+ 775d7000 -  775dbfff       20480   commit   image    r---  C:\Windows\system32\msvcrt.dll
+ 775dc000 -  775effff       81920     free            ----
+ 775f0000 -  775f0fff        4096   commit   image    r---
+ 775f1000 -  7f6effff   135262208     free            ----
+ 7f6f0000 -  7f6f4fff       20480   commit  mapped    r---
+ 7f6f5000 -  7f7effff     1028096  reserve  mapped        
+ 7f7f0000 -  7ff87fff     7962624     free            ----
+ 7ff88000 -  7ff88fff        4096   commit private    rw--
+ 7ff89000 -  7ff89fff        4096   commit private    rw--
+ 7ff8a000 -  7ff8afff        4096   commit private    rw--
+ 7ff8b000 -  7ff8bfff        4096   commit private    rw--
+ 7ff8c000 -  7ff8cfff        4096   commit private    rw--
+ 7ff8d000 -  7ff8dfff        4096   commit private    rw--
+ 7ff8e000 -  7ff8efff        4096   commit private    rw--
+ 7ff8f000 -  7ff8ffff        4096   commit private    rw--
+ 7ff90000 -  7ff90fff        4096   commit private    rw--
+ 7ff91000 -  7ff91fff        4096   commit private    rw--
+ 7ff92000 -  7ff92fff        4096   commit private    rw--
+ 7ff93000 -  7ff93fff        4096   commit private    rw--
+ 7ff94000 -  7ff94fff        4096   commit private    rw--
+ 7ff95000 -  7ff95fff        4096   commit private    rw--
+ 7ff96000 -  7ff96fff        4096   commit private    rw--
+ 7ff97000 -  7ff97fff        4096   commit private    rw--
+ 7ff98000 -  7ff98fff        4096   commit private    rw--
+ 7ff99000 -  7ff99fff        4096   commit private    rw--
+ 7ff9a000 -  7ff9afff        4096   commit private    rw--
+ 7ff9b000 -  7ff9bfff        4096   commit private    rw--
+ 7ff9c000 -  7ff9cfff        4096   commit private    rw--
+ 7ff9d000 -  7ff9dfff        4096   commit private    rw--
+ 7ff9e000 -  7ff9efff        4096   commit private    rw--
+ 7ff9f000 -  7ff9ffff        4096   commit private    rw--
+ 7ffa0000 -  7ffd2fff      208896   commit  mapped    r---
+ 7ffd3000 -  7ffd3fff        4096   commit private    rw--
+ 7ffd4000 -  7ffd4fff        4096   commit private    rw--
+ 7ffd5000 -  7ffd5fff        4096   commit private    rw--
+ 7ffd6000 -  7ffd6fff        4096   commit private    rw--
+ 7ffd7000 -  7ffd7fff        4096   commit private    rw--
+ 7ffd8000 -  7ffd8fff        4096   commit private    rw--
+ 7ffd9000 -  7ffd9fff        4096   commit private    rw--
+ 7ffda000 -  7ffdafff        4096   commit private    rw--
+ 7ffdb000 -  7ffdbfff        4096   commit private    rw--
+ 7ffdc000 -  7ffdcfff        4096   commit private    rw--
+ 7ffdd000 -  7ffddfff        4096   commit private    rw--
+ 7ffde000 -  7ffdefff        4096   commit private    rw--
+ 7ffdf000 -  7ffdffff        4096   commit private    rw--
+ 7ffe0000 -  7ffe0fff        4096   commit private    r---
+ 7ffe1000 -  7ffeffff       61440  reserve private    ----
+
+Committed:
+  image:    33533952 (0x1ffb000)
+  other:    80543744 (0x4cd0000)
+  Total:   114077696  (0x6ccb000)

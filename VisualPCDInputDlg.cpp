@@ -123,14 +123,22 @@ void CVisualPCDInputDlg::InitPointer()
 void CVisualPCDInputDlg::InitWindow()
 {
 	
-	this->SetWindowText("策略文件内容");
+// 	this->SetWindowText("策略文件内容");
+// 	pStrInputTitle = GetSonicUI()->CreateString();
+// 	pStrInputTitle->Format("策略文件内容");
+// 
+// 	pStrStatic1 = GetSonicUI()->CreateString();
+// 	pStrStatic1->Format("策略文件1内容：");
+// 	pStrStatic2 = GetSonicUI()->CreateString();
+// 	pStrStatic2->Format("策略文件2内容：");
+	this->SetWindowText("Content of Policy Files");
 	pStrInputTitle = GetSonicUI()->CreateString();
-	pStrInputTitle->Format("策略文件内容");
-
+	pStrInputTitle->Format("Content of Policy Files");
+	
 	pStrStatic1 = GetSonicUI()->CreateString();
-	pStrStatic1->Format("策略文件1内容：");
+	pStrStatic1->Format("Content of Policy File 1: ");
 	pStrStatic2 = GetSonicUI()->CreateString();
-	pStrStatic2->Format("策略文件2内容：");
+	pStrStatic2->Format("Content of Policy File 1");
 
 	//SetWindowLong(m_hWnd, GWL_EXSTYLE, 0x00080000);//WS_EX_LAYERED);
 	SetWindowLong(m_hWnd, GWL_EXSTYLE, GetWindowLong(m_hWnd, GWL_EXSTYLE) | WS_EX_LAYERED);

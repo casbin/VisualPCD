@@ -56,6 +56,7 @@ public:
 	void implementEnquiryAllOld();
 	void implementEnquiryAll();
 	void implementEnquiry(int i, int j);
+	void implementEnquiry_English(int i, int j);
 
 	int obtainBool(string s);
 	int enquirePolicyConflict(int ia, int ib);

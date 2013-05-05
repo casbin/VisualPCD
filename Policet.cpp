@@ -39,16 +39,16 @@ string Policet::PermissionToString(int i)
 	switch (i)
 	{
 	case 1:
-		return "PERMITA";
+		return "PERMIT-A";
 		break;
 	case 2:
-		return "DENYA";
+		return "DENY-A";
 		break;
 	case 3:
-		return "PERMITB";
+		return "PERMIT-B";
 		break;
 	case 4:
-		return "DENYB";
+		return "DENY-B";
 		break;
 	case 5:
 		return "SUB_CONTAIN";

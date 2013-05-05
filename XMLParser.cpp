@@ -474,7 +474,7 @@ vector<string> XMLParser::FileAQuintsToString()
 	vector<Policet>::iterator iter;
 	for (iter = m_nplcFileAQuints.begin(); iter < m_nplcFileAQuints.end(); iter ++)
 	{
-		/*
+		
 		temp = "Policy: " + itos((*iter).pol) + "\r\n";
 		temp += "PolicyId: " + (*iter).policyId + "\r\n";
 		temp += "RuleId: " + (*iter).ruleId + "\r\n";
@@ -482,16 +482,16 @@ vector<string> XMLParser::FileAQuintsToString()
 		temp += "Subject: " + (*iter).sub + "\r\n";
 		temp += "Resource: " + (*iter).res + "\r\n";
 		temp += "Action: " +(*iter).act + "\r\n";
-		nstr.push_back(temp);*/
-
-		temp = "策略:   " + itos((*iter).pol) + "\r\n";
-		temp += "策略ID: " + (*iter).policyId + "\r\n";
-		temp += "规则ID: " + (*iter).ruleId + "\r\n";
-		temp += "权限:   " + Policet::PermissionToString((*iter).per) + Policet::PermissionToText((*iter).per) + "\r\n";
-		temp += "主体:   " + (*iter).sub + "\r\n";
-		temp += "资源:   " + (*iter).res + "\r\n";
-		temp += "动作:   " +(*iter).act + "\r\n";
 		nstr.push_back(temp);
+
+// 		temp = "策略:   " + itos((*iter).pol) + "\r\n";
+// 		temp += "策略ID: " + (*iter).policyId + "\r\n";
+// 		temp += "规则ID: " + (*iter).ruleId + "\r\n";
+// 		temp += "权限:   " + Policet::PermissionToString((*iter).per) + Policet::PermissionToText((*iter).per) + "\r\n";
+// 		temp += "主体:   " + (*iter).sub + "\r\n";
+// 		temp += "资源:   " + (*iter).res + "\r\n";
+// 		temp += "动作:   " +(*iter).act + "\r\n";
+// 		nstr.push_back(temp);
 	}
 	return nstr;
 }
@@ -503,7 +503,7 @@ vector<string> XMLParser::FileBQuintsToString()
 	vector<Policet>::iterator iter;
 	for (iter = m_nplcFileBQuints.begin(); iter < m_nplcFileBQuints.end(); iter ++)
 	{
-		/*
+	
 		temp = "Policy: " + itos((*iter).pol) + "\r\n";
 		temp += "PolicyId: " + (*iter).policyId + "\r\n";
 		temp += "RuleId: " + (*iter).ruleId + "\r\n";
@@ -511,16 +511,16 @@ vector<string> XMLParser::FileBQuintsToString()
 		temp += "Subject: " + (*iter).sub + "\r\n";
 		temp += "Resource: " + (*iter).res + "\r\n";
 		temp += "Action: " +(*iter).act + "\r\n";
-		nstr.push_back(temp);*/
-
-		temp = "策略:   " + itos((*iter).pol) + "\r\n";
-		temp += "策略ID: " + (*iter).policyId + "\r\n";
-		temp += "规则ID: " + (*iter).ruleId + "\r\n";
-		temp += "权限:   " + Policet::PermissionToString((*iter).per) + Policet::PermissionToText((*iter).per) + "\r\n";
-		temp += "主体:   " + (*iter).sub + "\r\n";
-		temp += "资源:   " + (*iter).res + "\r\n";
-		temp += "动作:   " +(*iter).act + "\r\n";
 		nstr.push_back(temp);
+
+// 		temp = "策略:   " + itos((*iter).pol) + "\r\n";
+// 		temp += "策略ID: " + (*iter).policyId + "\r\n";
+// 		temp += "规则ID: " + (*iter).ruleId + "\r\n";
+// 		temp += "权限:   " + Policet::PermissionToString((*iter).per) + Policet::PermissionToText((*iter).per) + "\r\n";
+// 		temp += "主体:   " + (*iter).sub + "\r\n";
+// 		temp += "资源:   " + (*iter).res + "\r\n";
+// 		temp += "动作:   " +(*iter).act + "\r\n";
+// 		nstr.push_back(temp);
 	}
 	return nstr;
 }
